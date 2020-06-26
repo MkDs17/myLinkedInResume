@@ -1,0 +1,121 @@
+@import 'src/styles/vars';
+
+#home {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+
+  & .home-block {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    margin: 1em;
+
+    &-title {
+      margin-bottom: 2em;
+      text-align: center;
+      
+      & h2 {
+        font-size: 2em;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+  
+      & h3 {
+        text-transform: uppercase;
+        font-size: 1.5em;
+        font-weight: 300;
+        color: $primary;
+      }
+    }
+    &-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & .card {
+        margin : 0 .5em;
+
+        & .content {
+          & .description {
+            font-size: .9em;
+            line-height: 1.5em;
+            text-align: justify;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #home {
+    .home-block {
+      padding: 2em ;
+      margin: 2em .5em;
+      }
+
+    .home-block-content {
+      padding: 2em 1em;      
+    }
+  }  
+}
+
+@media (max-width: 992px) {
+  #home {
+
+    .home-block-section {
+      padding: 2em 1em;
+      flex-direction: column;
+      width: 100%;
+
+      & .card {
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 1em;
+
+        & .image {
+          width: 160px;
+        }
+
+        & .content {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+        }
+      }
+    }
+  }  
+}
+@media (max-width: 768px) {
+  #home {
+
+    .home-block-section {
+      padding: 2em 1em;
+      flex-direction: column;
+      width: 100%;
+
+      & .card {
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 1em;
+
+        & .image {
+          width: 100px;
+
+          & img {
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        & .content, .extra {
+          font-size: .9em;
+        }
+      }
+    }
+  }  
+}
