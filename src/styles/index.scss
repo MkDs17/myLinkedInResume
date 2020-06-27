@@ -1,34 +1,9 @@
 @import 'reset';
 @import 'vars';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 body {
   font-family: Poppins;
-  
-  .page.dimmer {
-    font-family: Poppins;
-
-    & .card {
-      width: 60vw;
-      height: 70vh;
-
-      & .image {
-        height: 20vh;
-
-        & img {
-          height: 20vh;
-          object-fit: cover;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  body {
-    .page.dimmer {
-      & .card {
-        width: 90vw;
-      }
-    }
-  }  
 }

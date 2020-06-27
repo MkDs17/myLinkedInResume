@@ -1,0 +1,10 @@
+@import 'src/styles/reset';
+@import 'src/styles/vars';
+
+#nav {
+  nav {
+    button:focus {
+      outline: inherit;
+    }
+  }
+}

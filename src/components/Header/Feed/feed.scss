@@ -1,0 +1,47 @@
+@import 'src/styles/vars';
+
+#feed {
+  .feed {
+    background-color: $grey-background;
+    margin: 2em auto;
+
+    & .feed-publication {
+       & .publication {
+        width: 552px;
+        box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2);
+        
+        & .publication-author {
+          & .publication-author-infos {
+            & .publication-author-name {
+              font-family: 'Open Sans', sans-serif;
+              font-size: .9em;
+              font-weight: 600;
+            }
+            & .publication-author-level-connection {
+              font-family: 'Open Sans', sans-serif;
+              font-size: .9em;
+              font-weight: 500;
+            }
+            & .publication-author-company {
+              font-family: 'Open Sans', sans-serif;
+              font-size: .8em;
+              padding: .2em 0 .4em;
+              font-weight: 300;
+            }
+            & .publication-author-publish-date {
+              font-size: .8em;
+              font-weight: 300;
+              & svg {
+                margin-left: .3em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
