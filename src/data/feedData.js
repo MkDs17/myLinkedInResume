@@ -1,7 +1,7 @@
 export default [
   {
-    name: 'Bill Gates',
-    avatar: 'Bill_Gates.png',
+    name: 'Mickael RASSICOT',
+    avatar: 'MR.png',
     connection_level: '1er',
     job: 'CEO',
     company: 'Microsoft',
@@ -11,10 +11,31 @@ export default [
     stats: {
       counting_notifs: 235,
       counting_comments: 78,
+      counting_views: 1240321,
       notifs: {
         likes: 24,
-        love: 249
-      }
-    }
-  }
-]
+        love: 249,
+      },
+    },
+    comments: [
+      {
+        author: 'Bill Gates',
+        author_img: 'Bill_Gates.png',
+        author_connection_level: '1er',
+        author_job: 'CEO',
+        author_company: 'Microsoft',
+        publish_date: '3 h',
+        content: 'Love this guy, He\'s awesome!',
+      },
+      {
+        author: 'Elon Musk',
+        author_img: 'Elon_Musk.jpg',
+        author_connection_level: '1er',
+        author_job: 'CEO',
+        author_company: 'Tesla',
+        publish_date: '12 h',
+        content: 'You\'re the man, MAN !',
+      },
+    ],
+  },
+];

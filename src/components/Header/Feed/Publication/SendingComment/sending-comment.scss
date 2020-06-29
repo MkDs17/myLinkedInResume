@@ -1,0 +1,32 @@
+@import 'src/styles/vars';
+
+.publication-sending-comment {
+
+  & .publication-sending-comment-author-avatar {
+    .h-9 {
+      height: 2.25rem;
+    }
+    .w-9 {
+      width: 2.25rem;
+    }
+  }
+
+  & .publication-sending-comment-content {
+    & form {
+      & input {
+        border-color: rgba(0,0,0,.45)
+      }
+      & input::placeholder {
+        font-size: .83em;
+        color: $light-gray;
+        letter-spacing: .03em;
+      }
+      & button {
+        background-color: $linkedin-blue;
+        font-family: 'Open Sans', sans-serif;
+        font-size: .85em;
+      }
+    }
+  }
+
+}

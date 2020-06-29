@@ -25,51 +25,83 @@
             & .publication-author-level-connection {
               font-size: .9em;
               font-weight: 500;
-              color: rgba(0,0,0,.6);
+              color: $light-gray;
             }
             & .publication-author-company {
               font-size: .75em;
               padding: .2em 0 .4em;
               font-weight: 300;
-              color: rgba(0,0,0,.6);
+              color: $light-gray;
             }
             & .publication-author-publish-date {
               font-size: .75em;
               font-weight: 300;
-              color: rgba(0,0,0,.6);
+              color: $light-gray;
               & svg {
                 margin-left: .3em;
               }
             }
           }
         }
-        .publication-content {
+        & .publication-content {
           font-family: 'Open Sans', sans-serif;
         }
-        .publication-stats {
+
+        & .publication-stats-icons:hover .publication-stats-counting-notifs {
+          text-decoration: underline;
+          color: $linkedin-blue;
+          cursor: pointer;
+        }
+        & .publication-stats-icons:hover {
+          cursor: pointer;
+        }
+
+        & .publication-stats {
           border-bottom: 1px solid #e6e9ec;
           margin: 0 .3em;
           padding: .53em 0;
 
-          img {
+          & img {
             width: 16px;
             height: 16px;
             margin-right: 2px;
           }
 
-          .publication-stats-counting {
-            color: rgba(0,0,0,.6);
+          & .publication-stats-counting, .publication-stats-counting-comments, .publication-stats-counting-views {
+            color: $light-gray;
             font-family: 'Open Sans', sans-serif;
             font-size: .75em;
             margin-left: 2px;
-            padding: .2em 0 .4em;
             font-weight: 300;
+          }
 
-            .publication-stats-counting-notifs:hover, .publication-stats-counting-comments:hover {
+          & .publication-stats-counting {
+
+            & .publication-stats-counting-notifs:hover {
               text-decoration: underline;
               color: $linkedin-blue;
+              cursor: pointer;
             }
           }
+            
+          & .publication-stats-counting-comments:hover {
+            text-decoration: underline;
+            color: $linkedin-blue;
+            cursor: pointer;
+          }
+        }
+
+        & .publication-actions {
+          font-family: 'Open Sans', sans-serif;
+          font-size: .8em;
+          font-weight: 600;
+          padding: .3em 0;
+          color: $light-gray;
+        }
+
+        & .publication-actions-like:hover, .publication-actions-comment:hover, .publication-actions-share:hover {
+          background-color: hsla(0,0%,81.2%,.25);
+          color: rgba(0,0,0,.75);
         }
       }
     }

@@ -1,0 +1,37 @@
+@import 'src/styles/vars';
+
+.publication-comment {
+
+  & .publication-comment-author-avatar {
+    .h-9 {
+      height: 2.25rem;
+    }
+    .w-9 {
+      width: 2.25rem;
+    }
+  }
+  & .publication-comment-content {
+    background-color: $bubble-background;
+
+    & .publication-comment-author {
+      font-family: 'Open Sans', sans-serif;
+
+      & .publication-comment-author-name {
+        font-size: .75em;
+        font-weight: 600;
+        color: $mid-gray;
+        line-height: 16px;
+
+        & span {
+          color: $light-gray;
+          font-size: .95em;
+        }
+      }
+      & .publication-comment-author-company {
+        font-size: .7em;
+        color: $light-gray;
+      }
+    }
+  }
+
+}
