@@ -1,0 +1,19 @@
+@import 'src/styles/vars';
+
+.publication-actions {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .8em;
+  font-weight: 600;
+  color: $light-gray;
+}
+.publication-actions button {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: $light-gray;
+}
+
+.publication-actions-like:hover, .publication-actions-comment:hover, .publication-actions-share:hover {
+  background-color: hsla(0,0%,81.2%,.25);
+  color: rgba(0,0,0,.75);
+  cursor: pointer;
+}

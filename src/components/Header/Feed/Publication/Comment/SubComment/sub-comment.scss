@@ -1,8 +1,8 @@
 @import 'src/styles/vars';
 
-.publication-comment {
+.publication-subcomment {
 
-  & .publication-comment-author-avatar {
+  & .publication-subcomment-author-avatar {
     .h-9 {
       height: 2.25rem;
     }
@@ -10,14 +10,14 @@
       width: 2.25rem;
     }
   }
-  & .publication-comment-content {
+  & .publication-subcomment-content {
     background-color: $bubble-background;
     border-radius: 0 15px 15px;
 
-    & .publication-comment-author {
+    & .publication-subcomment-author {
       font-family: 'Open Sans', sans-serif;
 
-      & .publication-comment-author-name {
+      & .publication-subcomment-author-name {
         font-size: .75em;
         font-weight: 600;
         color: $mid-gray;
@@ -28,12 +28,12 @@
           font-size: .95em;
         }
       }
-      & .publication-comment-author-company {
+      & .publication-subcomment-author-company {
         font-size: .7em;
         color: $light-gray;
       }
     }
-    & .publication-comment-published-date {
+    & .publication-subcomment-published-date {
       font-family: 'Open Sans', sans-serif;
       font-size: .7em;
       color: $light-gray;
@@ -42,14 +42,14 @@
         margin-left: 5px;
       }
     }
-    & .publication-comment-content-text {
+    & .publication-subcomment-content-text {
       font-family: 'Open Sans', sans-serif;
       font-size: .83em;
       line-height: 20px;
     }
   }
 
-  & .publication-comment-stats {
+  & .publication-subcomment-stats {
     font-family: 'Open Sans', sans-serif;
     font-size: .72em;
     color: $light-gray;

@@ -1,120 +1,50 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 import './feed.scss';
 
 import data from '../../../data/feedData';
 
+import Actions from './Publication/Actions';
+import Author from './Publication/Author';
+import Content from './Publication/Content';
+import Image from './Publication/Image';
 import SendingComment from './Publication/SendingComment';
+import Stats from './Publication/Stats';
 import Comment from './Publication/Comment';
 
 const Feed = () => {
+  const [viewMoreContent, setViewMoreContent] = useState(false);
+  const [totalNotification, setTotalNotification] = useState('');
+
   return (
     <div id="feed">
-      <div className="feed m-8 p-6 flex items-center justify-center">
-        {data.map(publi => (
+      <div className="feed m-8 p-8 flex items-center justify-center">
+        {data.map((publi) => (
           <div className="feed-publication flex">
-            <div className="publication p-4 bg-white rounded-sm">
+            <div className="publication bg-white rounded-sm">
 
-              <div className="publication-author mb-3 flex justify-between">
-                <div>
-                  <div className="flex">
-                    <div className="publication-author-avatar">
-                      <img className="h-12 w-12 mr-2 object-cover rounded-full" alt="" src={`/public/assets/img/publi-avatar/${publi.avatar}`} />
-                    </div>
-                    <div className="publication-author-infos flex flex-col">
-                      <div className="flex">
-                        <div className="publication-author-name mr-1">
-                          {publi.name}
-                        </div>
-                        <div className="publication-author-level-connection">
-                          • {publi.connection_level}
-                        </div>
-                      </div>
-                      <div className="publication-author-company">
-                        {publi.job} at {publi.company}
-                      </div>
-                      <div className="publication-author-publish-date flex">
-                        {publi.publish_date} •
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" width="16" height="16" focusable="false">
-                          <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zm0 1.84a5.16 5.16 0 011 .1v1.65l-1.71 1.7-.29.3v1L4.09 4.67A5.13 5.13 0 018 2.84zm1 10.22v-1.68l-.55-.28L7 10.38V9h3.09l.71.72L9.32 13zM2.84 8a5.1 5.1 0 01.67-2.49L6 8v2.38a1 1 0 00.55.89L8 12v1.16A5.17 5.17 0 012.84 8zm7.85 4.39L11.78 10a.75.75 0 00-.15-.84l-.84-.84a1 1 0 00-.7-.32H8V7l1.71-1.71a1 1 0 00.29-.7V3.24a5.14 5.14 0 01.69 9.15z" />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="publications-options">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false">
-                    <path d="M2 10h4v4H2v-4zm8 4h4v-4h-4v4zm8-4v4h4v-4h-4z" />
-                  </svg>
-                </div>
-              </div>
-
-              <div className="publication-content leading-tight text-sm">
-                {publi.content}
-              </div>
-
-              <div className="publication-stats flex items-center">
-                <div className="publication-stats-icons flex items-center">
-                  <div className="publication-stats-icons-like">
-                    <img className="object-cover rounded-full" alt="like" src="/public/assets/img/icons/like.svg" />
-                  </div>
-                  <div className="publication-stats-icons-clap">
-                    <img className="object-cover rounded-full" alt="clap" src="/public/assets/img/icons/clap.svg" />
-                  </div>
-                  <div className="publication-stats-icons-love">
-                    <img className="object-cover rounded-full" alt="love" src="/public/assets/img/icons/love.svg" />
-                  </div>
-                  <div className="publication-stats-icons-thinking">
-                    <img className="object-cover rounded-full" alt="thinking" src="/public/assets/img/icons/thinking.svg" />
-                  </div>
-                  <div className="publication-stats-icons-idea">
-                    <img className="object-cover rounded-full" alt="idea" src="/public/assets/img/icons/idea.svg" />
-                  </div>
-                  <div className="publication-stats-counting">
-                    <span className="publication-stats-counting-notifs">
-                      {publi.stats.counting_notifs}
-                    </span>
-                  </div>
-                </div>
-                <div className="publication-stats-counting-comments">
-                  • {publi.stats.counting_comments} commentaires
-                </div>
-                <div className="publication-stats-counting-views">
-                  • {publi.stats.counting_views.toLocaleString('fr-FR')} vues
-                </div>
-              </div>
-
-              <div className="publication-actions flex justify-between item-center">
-                <div className="publication-actions-buttons flex items-center">
-                  <div className="publication-actions-like flex items-center p-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false">
-                      <path d="M17.51 11l-2.15-3a14.81 14.81 0 01-2.25-5.29L12.74 1H10.5A2.5 2.5 0 008 3.5v.58a9 9 0 00.32 2.39L9 9H4.66A2.61 2.61 0 002 11.4a2.48 2.48 0 00.39 1.43 2.48 2.48 0 00.69 3.39 2.46 2.46 0 001.45 2.92 2.47 2.47 0 000 .36A2.5 2.5 0 007 22h4.52a8 8 0 001.94-.24l3-.76H21V11h-3.49zM19 19h-2.12l-3.41.82A6 6 0 0112 20H7a.9.9 0 01-.9-.89v-.14l.15-1-1-.4a.9.9 0 01-.55-.83.93.93 0 010-.22l.3-.95-.73-.57a.9.9 0 01-.39-.74.88.88 0 01.12-.44l.46-.72-.46-.72a.88.88 0 01-.14-.51 1 1 0 011-.87h6.64l-1.3-4.7a9 9 0 01-.33-2.37v-.55a.5.5 0 01.5-.5h.95a17.82 17.82 0 002.52 6.22L16.6 13H19v6z" />
-                    </svg>
-                    <span className="ml-1">J'aime</span>
-                  </div>
-                  <div className="publication-actions-comment flex items-center p-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false">
-                      <path d="M18 10H6V9h12v1zm4-5v17l-5-4H3a1 1 0 01-1-1V5a1 1 0 011-1h18a1 1 0 011 1zm-2 1H4v10h13.7l2.3 1.84V6zm-4 6H8v1h8v-1z" />
-                    </svg>
-                    <span className="ml-1">Commenter</span>
-                  </div>
-                  <div className="publication-actions-share flex items-center p-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false">
-                      <path d="M24 12a1.18 1.18 0 00-.36-.84L14 2v6h-3A10 10 0 001 18v4h1.87A6.11 6.11 0 019 16h5v6l9.63-9.14A1.18 1.18 0 0024 12zm-8 5.54V14H9a8.15 8.15 0 00-6 2.84A8 8 0 0111 10h5V6.48L21.81 12z" />
-                    </svg>
-                    <span className="ml-1">Partager</span>
-                  </div>
-                </div>
-                <div className="publication-actions-options flex items-center">
-                  <span className="mr-1">Les plus pertinents</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" width="16" height="16" focusable="false">
-                    <path d="M8.8 10.66L14 5.12a.07.07 0 00-.07-.12H2.07a.07.07 0 00-.07.12l5.2 5.54a1.1 1.1 0 001.6 0z" />
-                  </svg>
-                </div>
-              </div>
-
-              <SendingComment />
-              <Comment comments={publi.comments} />
+              <Author author={publi.author} />
+              <Content content={publi.content} />
+              <Image image={publi.img} />
+              <Stats
+                stats={publi.stats}
+                viewMoreAction={setViewMoreContent}
+                totalNotification={totalNotification}
+                setTotalNotification={setTotalNotification}
+              />
+              <Actions
+                viewMoreContent={viewMoreContent}
+                viewMoreAction={setViewMoreContent}
+                totalNotification={totalNotification}
+                setTotalNotification={setTotalNotification}
+              />
+              { viewMoreContent && (
+                <>
+                  <SendingComment />
+                  <Comment comments={publi.comments} />
+                </>
+              )}
 
             </div>
           </div>

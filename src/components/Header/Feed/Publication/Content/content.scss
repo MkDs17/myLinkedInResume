@@ -1,0 +1,15 @@
+@import 'src/styles/vars';
+
+.publication-content {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .83em;
+  line-height: 20px;
+  position: relative;
+
+  & .publication-content-view-more {
+    position: absolute;
+    bottom: 2px;
+    right: 1.2em;
+    color: $light-gray; 
+  }
+}

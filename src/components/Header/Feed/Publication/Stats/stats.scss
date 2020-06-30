@@ -1,0 +1,47 @@
+@import 'src/styles/vars';
+
+.publication-stats-icons:hover .publication-stats-counting-notifs {
+  text-decoration: underline;
+  color: $linkedin-blue;
+  cursor: pointer;
+}
+.publication-stats-icons:hover {
+  cursor: pointer;
+}
+
+.publication-stats {
+  border-bottom: 1px solid #e6e9ec;
+
+  & img {
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;
+  }
+
+  & .publication-stats-counting, .publication-stats-counting-comments, .publication-stats-counting-views {
+    color: $light-gray;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .75em;
+    margin-left: 2px;
+    font-weight: 300;
+  }
+
+  & .publication-stats-counting {
+
+    & .publication-stats-counting-notifs:hover {
+      text-decoration: underline;
+      color: $linkedin-blue;
+      cursor: pointer;
+    }
+  }
+    
+  & .publication-stats-counting-comments:hover {
+    text-decoration: underline;
+    color: $linkedin-blue;
+    cursor: pointer;
+  }
+  
+  & .publication-stats-counting-comments {
+    line-height: inherit;
+  }
+}

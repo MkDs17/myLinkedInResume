@@ -1,0 +1,35 @@
+@import 'src/styles/vars';
+
+.publication-author {
+  & .publication-author-infos {
+    & .publication-author-name, .publication-author-level-connection,
+    .publication-author-company,
+    .publication-author-publish-date {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    & .publication-author-name {
+      font-size: .9em;
+      font-weight: 600;
+    }
+    & .publication-author-level-connection {
+      font-size: .9em;
+      font-weight: 500;
+      color: $light-gray;
+    }
+    & .publication-author-company {
+      font-size: .75em;
+      padding: .2em 0 .4em;
+      font-weight: 300;
+      color: $light-gray;
+    }
+    & .publication-author-publish-date {
+      font-size: .75em;
+      font-weight: 300;
+      color: $light-gray;
+      & svg {
+        margin-left: .3em;
+      }
+    }
+  }
+}
