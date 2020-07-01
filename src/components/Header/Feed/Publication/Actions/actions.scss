@@ -5,15 +5,67 @@
   font-size: .8em;
   font-weight: 600;
   color: $light-gray;
+  position: relative;
+
+  & .publication-action-like-choice {
+    position: absolute;
+    top: -63px;
+    left: -20px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
+  }
 }
+
 .publication-actions button {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   color: $light-gray;
 }
 
+
 .publication-actions-like:hover, .publication-actions-comment:hover, .publication-actions-share:hover {
   background-color: hsla(0,0%,81.2%,.25);
   color: rgba(0,0,0,.75);
   cursor: pointer;
 }
+
+.publication-actions-buttons:hover publication-action-like-choice {
+  background-color: red;
+}
+
+.publication-action-like-choice {
+  transition: .3s;
+  visibility: hidden;
+}
+
+.publication-action-like-choice-active {
+  visibility: visible;
+}
+
+.publication-action-like-choice-active-animation {
+
+  & .publication-action-like-choice-img {
+    animation: reactions-bounceIconsIn .65s cubic-bezier(.28,.84,.42,1) forwards;
+    transition: all 0;
+  }
+
+  & .publication-action-like-choice--clap img {
+    animation-delay: 50ms;
+  }
+  & .publication-action-like-choice--love img {
+    animation-delay: 90ms;
+  }
+  & .publication-action-like-choice--idea img {
+    animation-delay: .13s;
+  }
+  & .publication-action-like-choice--interest img {
+    animation-delay: .17s;
+  }
+}
+
+@keyframes reactions-bounceIconsIn{
+  0%{transform:translateY(0)}
+  10%{transform:scale(.90,.7) translateY(0)}
+  30%{transform:scale(.70,.85) translateY(-8px)}
+  50%{transform:scale(.85,.75) translateY(0)}
+  60%{transform:scale(.80) translateY(-2px)} 
+  to{transform:scale(.80) translateY(0)}}
