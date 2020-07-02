@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './author.scss';
 
@@ -38,6 +39,17 @@ const Author = ({ author }) => {
       </div>
     </div>
   );
+};
+
+Author.propTypes = {
+  author: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+    connection_level: PropTypes.string.isRequired,
+    job: PropTypes.string.isRequired,
+    company: PropTypes.string,
+    publish_date: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default Author;

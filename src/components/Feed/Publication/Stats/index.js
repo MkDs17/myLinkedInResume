@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 import './stats.scss';
 
 const Stats = ({ stats, viewMoreAction, totalNotification, setTotalNotification }) => {
-
   useEffect(() => {
     setTotalNotification(stats.counting_total_notifs);
   }, []);
@@ -40,6 +40,24 @@ const Stats = ({ stats, viewMoreAction, totalNotification, setTotalNotification 
       </div>
     </div>
   );
+};
+
+Stats.propTypes = {
+  stats: PropTypes.shape({
+    counting_total_notifs: PropTypes.number.isRequired,
+    counting_comments: PropTypes.number.isRequired,
+    counting_views: PropTypes.number.isRequired,
+    notifs: PropTypes.shape({
+      likes: PropTypes.number.isRequired,
+      love: PropTypes.number.isRequired,
+      clap: PropTypes.number.isRequired,
+      idea: PropTypes.number.isRequired,
+      interesting: PropTypes.number.isRequired,
+    }).isRequired,
+  }).isRequired,
+  viewMoreAction: PropTypes.func.isRequired,
+  totalNotification: PropTypes.number.isRequired,
+  setTotalNotification: PropTypes.func.isRequired,
 };
 
 export default Stats;

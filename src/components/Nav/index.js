@@ -6,7 +6,6 @@ const Nav = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
-    console.log('coucou');
     setShowMenu(!showMenu);
   };
   const downloadCV = () => {

@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import './actions.scss';
 
-import { dynamicContentButton } from '../../../../../utils/funtions';
+import { dynamicContentButton } from '../../../../utils/funtions';
 
 import LikeChoice from './LikeChoice';
 
@@ -28,15 +29,12 @@ const Actions = ({ viewMoreContent, viewMoreAction, totalNotification, setTotalN
 
   // Permet d'ajouter un like
   const addLike = () => {
-    console.log('je like');
     if (clicked === false) {
-      console.log('cliked is false');
       setTotalNotification(totalNotification + 1);
       setClicked(true);
       setlikedButtonClass('blue');
     }
     if (clicked === true) {
-      console.log('cliked is true');
       setTotalNotification(totalNotification - 1);
       setClicked(false);
       setlikedButtonClass('');
@@ -44,9 +42,7 @@ const Actions = ({ viewMoreContent, viewMoreAction, totalNotification, setTotalN
   };
   // Permet d'ajouter un like
   const addLikeFromChild = () => {
-    console.log('je like');
     if (clicked === false) {
-      console.log('cliked is false');
       setTotalNotification(totalNotification + 1);
       setClicked(true);
       setlikedButtonClass('blue');
@@ -119,6 +115,13 @@ const Actions = ({ viewMoreContent, viewMoreAction, totalNotification, setTotalN
       )}
     </div>
   );
+};
+
+Actions.propTypes = {
+  viewMoreContent: PropTypes.bool.isRequired,
+  viewMoreAction: PropTypes.func.isRequired,
+  totalNotification: PropTypes.number.isRequired,
+  setTotalNotification: PropTypes.func.isRequired,
 };
 
 export default Actions;

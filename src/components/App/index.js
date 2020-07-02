@@ -1,15 +1,15 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
 
 import './app.scss';
 
-import Home from '../Home';
-import Header from '../Header';
+import Nav from '../Nav';
+import Feed from '../Feed';
 
 function App() {
   return (
     <div id="app">
-      <Header />
+      <Nav />
+      <Feed />
     </div>
   );
 }

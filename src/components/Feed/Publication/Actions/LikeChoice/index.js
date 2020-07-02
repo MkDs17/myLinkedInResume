@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './like-choice.scss';
 
 const LikeChoice = ({ className, setClicked, setLikedButtonHover, setlikedButtonClass, addLikeFromChild }) => {
-  // Permet de gérer l'affichage de la pop-up nous permettant de choisir l'action du like (like, love, interesst, etc...)
+// Permet de gérer l'affichage de la pop-up nous permettant de choisir l'action du like (like, love, interesst, etc...)
   const mouseOver = () => {
     setLikedButtonHover(true);
   };
@@ -44,6 +45,14 @@ const LikeChoice = ({ className, setClicked, setLikedButtonHover, setlikedButton
       </div>
     </div>
   );
+};
+
+LikeChoice.propTypes = {
+  className: PropTypes.string.isRequired,
+  setClicked: PropTypes.func.isRequired,
+  setLikedButtonHover: PropTypes.func.isRequired,
+  setlikedButtonClass: PropTypes.func.isRequired,
+  addLikeFromChild: PropTypes.func.isRequired,
 };
 
 export default LikeChoice;

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import './feed.scss';
 
-import data from '../../../data/feedData';
+import data from '../../data/feedData';
 
 import Publication from './Publication';
 
