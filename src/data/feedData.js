@@ -171,10 +171,10 @@ export default [
       connection_level: '1er',
       job: 'Développeur Web - Front End - React.Js',
       company: '',
-      publish_date: '2 j',
+      publish_date: '26/08/2019',
     },
-    content: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.',
-    img: 'my-web-resume.png',
+    content: 'C\'est parti pour cinq mois de formation intensif avec l\'école O\'clock où je vais apprendre le métier de Développeur Web. J\'ai déja des connaissances acquises en autodidacte, mais j\'ai besoin de méthodologie et de partir sur des bases saines. Espérons que je trouve mon bonheur',
+    img: 'first-days.png',
     stats: {
       counting_total_notifs: 14,
       counting_comments: 78,

@@ -19,7 +19,7 @@ const Content = ({ content }) => {
   }, [excerpt]);
 
   return (
-    <div className="publication-content px-4 pt-4">
+    <div className="publication-content px-4">
       {contentToShow}
       { excerpt === true && 
         <button className="publication-content-view-more focus:outline-none focus:shadow-outline-none" type="button" onClick={() => setExcerpt(!excerpt)}> ...voir plus </button>
