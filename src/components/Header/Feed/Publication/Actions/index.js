@@ -28,13 +28,28 @@ const Actions = ({ viewMoreContent, viewMoreAction, totalNotification, setTotalN
 
   // Permet d'ajouter un like
   const addLike = () => {
+    console.log('je like');
     if (clicked === false) {
+      console.log('cliked is false');
       setTotalNotification(totalNotification + 1);
       setClicked(true);
+      setlikedButtonClass('blue');
     }
     if (clicked === true) {
+      console.log('cliked is true');
       setTotalNotification(totalNotification - 1);
       setClicked(false);
+      setlikedButtonClass('');
+    }
+  };
+  // Permet d'ajouter un like
+  const addLikeFromChild = () => {
+    console.log('je like');
+    if (clicked === false) {
+      console.log('cliked is false');
+      setTotalNotification(totalNotification + 1);
+      setClicked(true);
+      setlikedButtonClass('blue');
     }
   };
 
@@ -71,7 +86,7 @@ const Actions = ({ viewMoreContent, viewMoreAction, totalNotification, setTotalN
 
   return (
     <div className="publication-actions flex justify-between item-center px-2 py-1">
-      <LikeChoice className={actionLikeChoiceClassname} setLikedButtonHover={setLikedButtonHover} setlikedButtonClass={setlikedButtonClass} />
+      <LikeChoice className={actionLikeChoiceClassname} setClicked={setClicked} setLikedButtonHover={setLikedButtonHover} setlikedButtonClass={setlikedButtonClass} addLikeFromChild={addLikeFromChild} />
       <div className="publication-actions-buttons flex items-center">
 
         <button type="button" className={likeButtonClassname} onClick={() => addLike()} onMouseOver={mouseOver} onMouseOut={mouseOut}>

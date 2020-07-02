@@ -15,18 +15,17 @@ const Nav = () => {
 
   return (
     <div id="nav">
-      <nav className="flex items-center justify-between flex-wrap p-4 bg-white shadow">
-        <div className="flex items-center flex-shrink-0 text-white mr-6">
+      <nav className="flex items-center justify-between flex-wrap px-4 py-1 bg-white shadow">
+        <div className="flex items-center text-white mr-6">
           <img className="fill-current h-8 mr-2" alt="logo mr-webdev" src="/public/assets/img/logo.png" srcSet="/public/assets/img/logo.png" />
         </div>
-        <div className="flex">
-          <button onClick={downloadCV} type="button" className="px-6 mr-6 bg-purple-500 rounded-md">Mon CV</button>
+        <div className="flex items-center">
+          <button onClick={downloadCV} type="button" className="download-button px-6 py-3 mr-6 shadow-lg rounded-md font-semibold">Mon CV</button>
           <button onClick={toggleMenu} type="button" className="flex items-center">
             <img
               className="fill-current h-12"
               alt="logo mr-webdev"
               src={`/public/assets/img/${showMenu ? 'avataaars.svg' : 'avataaars1.svg'}`}
-              srcSet={`/public/assets/img/${showMenu ? 'avataaars.svg' : 'avataaars1.svg'}`}
             />
           </button>
         </div>

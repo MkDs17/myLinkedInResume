@@ -5,10 +5,10 @@
 }
 
 .publication-action-like-choice--like, .publication-action-like-choice--clap, .publication-action-like-choice--love, .publication-action-like-choice--idea, .publication-action-like-choice--interest {
+  //TODO trouver le mystère de bouton qui reste en suspens => //transition: .3s;
   position: relative;
 
   & .publication-action-like-choice-img {
-    transition: .3s;
     transform: scale(.8) translateY(0);
   }
 
@@ -28,8 +28,9 @@
 }
 
 .publication-action-like-choice--like:hover, .publication-action-like-choice--clap:hover, .publication-action-like-choice--love:hover, .publication-action-like-choice--idea:hover, .publication-action-like-choice--interest:hover{
-  
+
   & .publication-action-like-choice-img {
+    transition: .3s;
     transform: scale(1.15) translateY(-28%);
   }
 

@@ -21,15 +21,10 @@
   color: $light-gray;
 }
 
-
 .publication-actions-like:hover, .publication-actions-comment:hover, .publication-actions-share:hover {
   background-color: hsla(0,0%,81.2%,.25);
   color: rgba(0,0,0,.75);
   cursor: pointer;
-}
-
-.publication-actions-buttons:hover publication-action-like-choice {
-  background-color: red;
 }
 
 .publication-action-like-choice {

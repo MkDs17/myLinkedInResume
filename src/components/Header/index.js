@@ -10,6 +10,7 @@ const Header = () => {
     <div id="header">
       <Nav />
       <Feed />
+      {/* <div className="footer">FOOOTER</div> */}
     </div>
   );
 };
