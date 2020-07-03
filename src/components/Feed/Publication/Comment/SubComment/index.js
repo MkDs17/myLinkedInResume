@@ -1,6 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './sub-comment.scss';
+
+import { calculateTimeBtwTwoDates, checkIfTextContainsLink } from '../../../../../utils/funtions';
 
 const SubComment = ({ subcomments }) => {
   return (
@@ -9,7 +12,7 @@ const SubComment = ({ subcomments }) => {
         <div key={com.id} className="publication-subcomment flex mt-1 mb-1">
 
           <div className="publication-subcomment-author-avatar">
-            <img className="h-9 w-9 mr-2 object-cover rounded-full" alt="" src={`/public/assets/img/publi/avatar/${com.author_img}`} />
+            <img className="h-9 w-9 mr-2 object-cover rounded-full" alt="" src={com.author_img} />
           </div>
 
           <div className="publication-subcomment-box flex flex-col w-full">
@@ -20,14 +23,19 @@ const SubComment = ({ subcomments }) => {
                   <div className="publication-subcomment-author-company">{com.author_job} at {com.author_company}</div>
                 </div>
                 <div className="publication-subcomment-published-date flex">
-                  {com.publish_date}
+                  {calculateTimeBtwTwoDates(com.publish_date)}
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" width="16" height="16" focusable="false">
                     <path d="M2 7h2v2H2V7zm5 2h2V7H7v2zm5-2v2h2V7h-2z" />
                   </svg>
                 </div>
               </div>
               <div className="publication-subcomment-content-text mt-3 mb-2">
-                {com.content}
+                {checkIfTextContainsLink(com.content).map((text, i) => (
+                  <div key={i}>
+                    { text.type === 'text' && (<span><p>{text.text}</p></span>)}
+                    { text.type === 'link' && (<span><a href={text.text}>{text.text}</a></span>)}
+                  </div>
+                ))}
               </div>
             </div>
 
@@ -40,7 +48,7 @@ const SubComment = ({ subcomments }) => {
                   </svg>
                 </div>
                 <div className="publication-subcomment-stats-like-separator mx-2">•</div>
-                <div className="publication-subcomment-stats-like-count">{com.stats.likes} J'aime</div>
+                <div className="publication-subcomment-stats-like-count">{com.stats.like} J'aime</div>
               </div>
 
               <div>|</div>
@@ -61,6 +69,28 @@ const SubComment = ({ subcomments }) => {
     </div>
 
   );
+};
+
+SubComment.propTypes = {
+  subcomments: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      author: PropTypes.string.isRequired,
+      author_img: PropTypes.string.isRequired,
+      author_connection_level: PropTypes.string.isRequired,
+      author_job: PropTypes.string.isRequired,
+      author_company: PropTypes.string,
+      publish_date: PropTypes.string.isRequired,
+      content: PropTypes.string.isRequired,
+      stats: PropTypes.shape({
+        like: PropTypes.number.isRequired,
+      }).isRequired,
+    }),
+  ),
+};
+
+SubComment.defaultProps = {
+  subcomments: null,
 };
 
 export default SubComment;

@@ -1,8 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './comment.scss';
 
+import { calculateTimeBtwTwoDates } from '../../../../utils/funtions';
+
 import SubComment from './SubComment';
+
 
 const Comment = ({ comments }) => {
   return (
@@ -17,7 +21,7 @@ const Comment = ({ comments }) => {
           <div key={com.id} className="publication-comment flex mx-4 mt-1 mb-3">
 
             <div className="publication-comment-author-avatar">
-              <img className="h-9 w-9 mr-2 object-cover rounded-full" alt="" src={`/public/assets/img/publi/avatar/${com.author_img}`} />
+              <img className="h-9 w-9 mr-2 object-cover rounded-full" alt="" src={com.author_img} />
             </div>
 
             <div className="publication-comment-box flex flex-col w-full">
@@ -28,7 +32,7 @@ const Comment = ({ comments }) => {
                     <div className="publication-comment-author-company">{com.author_job} at {com.author_company}</div>
                   </div>
                   <div className="publication-comment-published-date flex">
-                    {com.publish_date}
+                    {calculateTimeBtwTwoDates(com.publish_date)}
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" width="16" height="16" focusable="false">
                       <path d="M2 7h2v2H2V7zm5 2h2V7H7v2zm5-2v2h2V7h-2z" />
                     </svg>
@@ -48,7 +52,7 @@ const Comment = ({ comments }) => {
                     </svg>
                   </div>
                   <div className="publication-comment-stats-like-separator mx-2">•</div>
-                  <div className="publication-comment-stats-like-count">{com.stats.likes} J'aime</div>
+                  <div className="publication-comment-stats-like-count">{com.stats.like} J'aime</div>
                 </div>
 
                 <div>|</div>
@@ -59,7 +63,9 @@ const Comment = ({ comments }) => {
                       <path d="M14 3H2a1 1 0 00-1 1v7a1 1 0 001 1h9l4 3V4a1 1 0 00-1-1zM3 10V5h10v6.11L11.52 10H3zm2-3h6v1H5V7z" />
                     </svg>
                   </div>
-                  <div className="publication-comment-stats-comment-separator mx-2">•</div>
+                  {com.subcomments !== undefined && (
+                    <div className="publication-comment-stats-comment-separator mx-2">•</div>
+                  )}
                   <div className="publication-comment-stats-comment-count">
                     {commentsCount}
                   </div>
@@ -79,8 +85,43 @@ const Comment = ({ comments }) => {
         );
       })}
     </div>
-
   );
+};
+
+Comment.propTypes = {
+  comments: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      author: PropTypes.string.isRequired,
+      author_img: PropTypes.string.isRequired,
+      author_connection_level: PropTypes.string.isRequired,
+      author_job: PropTypes.string.isRequired,
+      author_company: PropTypes.string,
+      publish_date: PropTypes.string.isRequired,
+      content: PropTypes.string.isRequired,
+      stats: PropTypes.shape({
+        like: PropTypes.number.isRequired,
+      }).isRequired,
+      subcomments: PropTypes.arrayOf(
+        PropTypes.shape({
+          id: PropTypes.number.isRequired,
+          author: PropTypes.string.isRequired,
+          author_img: PropTypes.string.isRequired,
+          author_connection_level: PropTypes.string.isRequired,
+          author_job: PropTypes.string.isRequired,
+          author_company: PropTypes.string,
+          publish_date: PropTypes.string.isRequired,
+          content: PropTypes.string.isRequired,
+          stats: PropTypes.shape({
+            like: PropTypes.number.isRequired,
+          }).isRequired,
+        }),
+      ),
+    }),
+  ),
+};
+Comment.defaultProps = {
+  comments: null,
 };
 
 export default Comment;

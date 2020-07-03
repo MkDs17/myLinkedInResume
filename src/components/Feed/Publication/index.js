@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
 import './publication.scss';
@@ -11,9 +11,19 @@ import SendingComment from './SendingComment';
 import Stats from './Stats';
 import Comment from './Comment';
 
+import { countNotifs } from '../../../utils/funtions';
+
 const Publication = ({ publi }) => {
+  console.log('publi', publi);
   const [viewMoreContent, setViewMoreContent] = useState(false);
   const [totalNotification, setTotalNotification] = useState(0);
+  const [commentsCounter, setCommentsCounter] = useState(0);
+
+  useEffect(() => {
+    const notifs = countNotifs(publi.stats.notifs.like, publi.stats.notifs.love, publi.stats.notifs.clap, publi.stats.notifs.idea, publi.stats.notifs.interest);
+    setTotalNotification(notifs);
+    setCommentsCounter(publi.comments.length);
+  }, []);
 
   return (
     <div id="publication">
@@ -24,7 +34,7 @@ const Publication = ({ publi }) => {
         stats={publi.stats}
         viewMoreAction={setViewMoreContent}
         totalNotification={totalNotification}
-        setTotalNotification={setTotalNotification}
+        commentsCounter={commentsCounter}
       />
       <Actions
         viewMoreContent={viewMoreContent}
@@ -45,57 +55,12 @@ const Publication = ({ publi }) => {
 Publication.propTypes = {
   publi: PropTypes.shape({
     id: PropTypes.number.isRequired,
-    author: PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      avatar: PropTypes.string.isRequired,
-      connection_level: PropTypes.string.isRequired,
-      job: PropTypes.string.isRequired,
-      company: PropTypes.string,
-      publish_date: PropTypes.string.isRequired,
-    }),
+    author: PropTypes.shape(),
     content: PropTypes.string.isRequired,
     img: PropTypes.string,
-    stats: PropTypes.shape({
-      counting_total_notifs: PropTypes.number.isRequired,
-      counting_comments: PropTypes.number.isRequired,
-      counting_views: PropTypes.number.isRequired,
-      notifs: PropTypes.shape({
-        likes: PropTypes.number.isRequired,
-        love: PropTypes.number.isRequired,
-        clap: PropTypes.number.isRequired,
-        idea: PropTypes.number.isRequired,
-        interesting: PropTypes.number.isRequired,
-      }).isRequired,
-    }).isRequired,
+    stats: PropTypes.shape().isRequired,
     comments: PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.number.isRequired,
-        author: PropTypes.string.isRequired,
-        author_img: PropTypes.string.isRequired,
-        author_connection_level: PropTypes.string.isRequired,
-        author_job: PropTypes.string.isRequired,
-        author_company: PropTypes.string.isRequired,
-        publish_date: PropTypes.string.isRequired,
-        content: PropTypes.string.isRequired,
-        stats: PropTypes.shape({
-          likes: PropTypes.number.isRequired,
-        }).isRequired,
-        subcomments: PropTypes.arrayOf(
-          PropTypes.shape({
-            id: PropTypes.number.isRequired,
-            author: PropTypes.string.isRequired,
-            author_img: PropTypes.string.isRequired,
-            author_connection_level: PropTypes.string.isRequired,
-            author_job: PropTypes.string.isRequired,
-            author_company: PropTypes.string.isRequired,
-            publish_date: PropTypes.string.isRequired,
-            content: PropTypes.string.isRequired,
-            stats: PropTypes.shape({
-              likes: PropTypes.number.isRequired,
-            }).isRequired,
-          }),
-        ),
-      }),
+      PropTypes.shape(),
     ),
   }).isRequired,
 };
