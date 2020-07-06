@@ -55,4 +55,15 @@
     color: $light-gray;
   }
 
+  & .publication-comment-subcomments {
+    .publication-comment-subcomments-button {
+      font-family: 'Open Sans', sans-serif;
+      font-size: .75em;
+    }
+    .publication-comment-subcomments-button:hover {
+      color: $linkedin-blue;
+      text-decoration: underline;
+    }
+  }
+
 }

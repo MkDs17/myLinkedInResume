@@ -11,7 +11,7 @@ const Content = ({ content }) => {
   useEffect(() => {
     const excerptContent = () => {
       let p = '';
-      p = content.substring(0, 200);
+      p = content.substring(0, 150);
       return p;
     };
 
@@ -21,8 +21,8 @@ const Content = ({ content }) => {
   return (
     <div className="publication-content px-4">
       {contentToShow}
-      { excerpt === true && 
-        <button className="publication-content-view-more focus:outline-none focus:shadow-outline-none" type="button" onClick={() => setExcerpt(!excerpt)}> ...voir plus </button>
+      { excerpt === true
+        && <button className="publication-content-view-more focus:outline-none focus:shadow-outline-none" type="button" onClick={() => setExcerpt(!excerpt)}> ...voir plus </button>
       }
     </div>
   );

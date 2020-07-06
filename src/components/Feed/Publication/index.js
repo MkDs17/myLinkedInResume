@@ -14,7 +14,6 @@ import Comment from './Comment';
 import { countNotifs } from '../../../utils/funtions';
 
 const Publication = ({ publi }) => {
-  console.log('publi', publi);
   const [viewMoreContent, setViewMoreContent] = useState(false);
   const [totalNotification, setTotalNotification] = useState(0);
   const [commentsCounter, setCommentsCounter] = useState(0);
@@ -45,7 +44,11 @@ const Publication = ({ publi }) => {
       { viewMoreContent && (
         <>
           <SendingComment />
-          <Comment comments={publi.comments} />
+          {publi.comments.map((comment) => (
+            <div key={comment.id} className="publication-comments flex flex-col mb-4">
+              <Comment comment={comment} />
+            </div>
+          ))}
         </>
       )}
     </div>

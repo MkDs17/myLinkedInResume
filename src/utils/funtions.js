@@ -90,8 +90,6 @@ export const calculateTimeBtwTwoDates = (value) => {
 
   const countDays = Math.floor((Date.UTC(date2.getFullYear(), date2.getMonth(), date2.getDate()) - Date.UTC(date1.getFullYear(), date1.getMonth(), date1.getDate())) / (1000 * 60 * 60 * 24));
 
-  console.log('countDays', countDays);
-
   if (countDays >= 335) {
     return '1 y';
   } if (countDays < 335 && countDays > 30) {
@@ -130,8 +128,7 @@ export const countNotifs = (firstVal, SecondVal, ThirdVal, FourfthVal, FifthVal)
 };
 
 export const checkIfTextContainsLink = (text) => {
-  //const text = 'coucou je m\'appelle mickael, http://coucou.com. C\'est nous les amis';
-  const expression = /(https?:\/\/)?[\w\-~]+(\.[\w\-~]+)+(\/[\w\-~@:%]*)*(#[\w\-]*)?(\?[^\s]*)?/gi;
+  const expression = /(https?:\/\/)?[\w\-~]+(\.[\w\-~]+)+(\/[\w\-~@:%]*)*(#[\w-]*)?(\?[^\s]*)?/gi;
   const regex = new RegExp(expression);
   let match = '';
   let splitText = [];
@@ -150,6 +147,5 @@ export const checkIfTextContainsLink = (text) => {
       },
     );
   }
-  console.log('splitText', splitText);
   return splitText;
 };

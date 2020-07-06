@@ -4,6 +4,44 @@ const fakeDatas = fakerGeneralsDatas();
 
 export default [
   {
+    id: 4,
+    author: {
+      name: 'Mickael RASSICOT',
+      avatar: 'MR.png',
+      connection_level: '1er',
+      job: 'Développeur Web - Front End - React.Js',
+      company: null,
+      publish_date: '02/12/2019',
+    },
+    content: 'On attaque maintenant le mois de spécialisation, pour ma part ce sera sur React.JS, framework propulsé par l\'équipe de Facebook. Je suis tellement heureux de refaire du Javascript ! Le programme en commentaire :',
+    img: null,
+    stats: {
+      counting_views: randomNumber(1, 1000),
+      notifs: {
+        like: 10,
+        love: 2,
+        clap: 3,
+        idea: 0,
+        interest: 0,
+      },
+    },
+    comments: [
+      {
+        id: 1,
+        author: 'Mickaël RASSICOT',
+        author_img: '/public/assets/img/publi/avatar/MR.png',
+        author_connection_level: '1er',
+        author_job: 'Développeur Web - Front End - React.Js',
+        author_company: null,
+        publish_date: '02/12/2019',
+        content: 'Vu le programme, je sens que ce mois va passer vite, très vite ! https://oclock.io/formations/developpeur-react',
+        stats: {
+          like: randomNumber(1, 10),
+        },
+      },
+    ],
+  },
+  {
     id: 3,
     author: {
       name: 'Mickael RASSICOT',
@@ -28,11 +66,11 @@ export default [
     comments: [
       {
         id: 1,
-        author: `${fakeDatas[6].firstname} ${fakeDatas[6].lastname}`,
-        author_img: fakeDatas[6].pic,
+        author: `${fakeDatas[7].firstname} ${fakeDatas[7].lastname}`,
+        author_img: fakeDatas[7].pic,
         author_connection_level: randomLevel(),
-        author_job: fakeDatas[6].jobTitle,
-        author_company: fakeDatas[6].company,
+        author_job: fakeDatas[7].jobTitle,
+        author_company: fakeDatas[7].company,
         publish_date: '28/11/2019',
         content: 'Vous étudiez quoi exactement pendant trois mois ?',
         stats: {
@@ -57,7 +95,7 @@ export default [
             author: 'Mickaël RASSICOT',
             author_img: '/public/assets/img/publi/avatar/MR.png',
             author_connection_level: '1er',
-            author_job: '',
+            author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
             publish_date: '28/11/2019',
             content: '1ère saison : découverte de Linux, HTML, CSS et Git',
@@ -160,11 +198,11 @@ export default [
       },
       {
         id: 2,
-        author: `${fakeDatas[7].firstname} ${fakeDatas[7].lastname}`,
-        author_img: fakeDatas[7].pic,
+        author: `${fakeDatas[8].firstname} ${fakeDatas[8].lastname}`,
+        author_img: fakeDatas[8].pic,
         author_connection_level: randomLevel(),
-        author_job: fakeDatas[7].jobTitle,
-        author_company: fakeDatas[7].company,
+        author_job: fakeDatas[8].jobTitle,
+        author_company: fakeDatas[8].company,
         publish_date: '28/11/2019',
         content: 'En trois mois comment tu peux devenir développeur ? C\'est une vaste blague ! Donc les écoles d\'ingénieur, les licences, masters ne servent plus à rien grâce à O\'clock maintenant c\'est ça ?',
         stats: {
@@ -173,11 +211,11 @@ export default [
         subcomments: [
           {
             id: 1,
-            author: `${fakeDatas[8].firstname} ${fakeDatas[8].lastname}`,
-            author_img: fakeDatas[8].pic,
+            author: `${fakeDatas[9].firstname} ${fakeDatas[9].lastname}`,
+            author_img: fakeDatas[9].pic,
             author_connection_level: randomLevel(),
-            author_job: fakeDatas[8].jobTitle,
-            author_company: fakeDatas[8].company,
+            author_job: fakeDatas[9].jobTitle,
+            author_company: fakeDatas[9].company,
             publish_date: '28/11/2019',
             content: 'On a trouvé notre champion ça y est ! On ne devient pas développeur en trois mois, mais encore moins en trois ans  ou même cinq ans. Ce métier est un apprentissage permanent. Cette formation permet d\'avoir de solides bases concernant les langages essentiels dans le monde du web. Et le plus important : cette formation t\'apprends à apprendre ! Alors oui je le dis ouvertement, cette formation permet à des personnes de DEVENIR des développeurs en puissance. Reviens dans quelques mois et regarde ce qu\'il sera capable de faire avant de critiquer',
             stats: {
@@ -308,11 +346,11 @@ export default [
       },
       {
         id: 3,
-        author: `${fakeDatas[3].firstname} ${fakeDatas[3].lastname}`,
-        author_img: fakeDatas[3].pic,
+        author: `${fakeDatas[5].firstname} ${fakeDatas[5].lastname}`,
+        author_img: fakeDatas[5].pic,
         author_connection_level: randomLevel(),
-        author_job: fakeDatas[3].jobTitle,
-        author_company: fakeDatas[3].company,
+        author_job: fakeDatas[5].jobTitle,
+        author_company: fakeDatas[5].company,
         publish_date: '26/08/2019',
         content: 'Ca à l\'air trop bien cette école, vous avez un lien pour en savoir plus ?',
         stats: {
@@ -321,11 +359,11 @@ export default [
         subcomments: [
           {
             id: 1,
-            author: `${fakeDatas[5].firstname} ${fakeDatas[5].lastname}`,
-            author_img: fakeDatas[5].pic,
+            author: `${fakeDatas[6].firstname} ${fakeDatas[6].lastname}`,
+            author_img: fakeDatas[6].pic,
             author_connection_level: randomLevel(),
-            author_job: fakeDatas[5].jobTitle,
-            author_company: fakeDatas[5].company,
+            author_job: fakeDatas[6].jobTitle,
+            author_company: fakeDatas[6].company,
             publish_date: '26/08/2019',
             content: 'Tu trouveras toutes les infos ici: https://oclock.io/formations/developpeur-web',
             stats: {
