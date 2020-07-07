@@ -6,7 +6,13 @@ import './content.scss';
 
 const Content = ({ content }) => {
   const [contentToShow, setcontentToShow] = useState(content);
-  const [excerpt, setExcerpt] = useState(true);
+  const [excerpt, setExcerpt] = useState(false);
+
+  useEffect(() => {
+    if (content.length >= 150) {
+      setExcerpt(true);
+    }
+  }, []);
 
   useEffect(() => {
     const excerptContent = () => {

@@ -37,8 +37,6 @@ const Comment = ({ comment }) => {
       return p;
     };
 
-    console.log('comment.content.length', comment.content.length);    
-
     { excerpt === true ? setcontentToShow(() => excerptContent()) : setcontentToShow(comment.content) }
   }, [maxSubComToShow, excerpt]);
 

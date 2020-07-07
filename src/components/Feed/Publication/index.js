@@ -8,6 +8,7 @@ import Author from './Author';
 import Content from './Content';
 import Image from './Image';
 import SendingComment from './SendingComment';
+import SharedHeader from './SharedHeader';
 import Stats from './Stats';
 import Comment from './Comment';
 
@@ -21,11 +22,16 @@ const Publication = ({ publi }) => {
   useEffect(() => {
     const notifs = countNotifs(publi.stats.notifs.like, publi.stats.notifs.love, publi.stats.notifs.clap, publi.stats.notifs.idea, publi.stats.notifs.interest);
     setTotalNotification(notifs);
-    setCommentsCounter(publi.comments.length);
+    if (publi.comments !== undefined) {
+      setCommentsCounter(publi.comments.length);
+    }
   }, []);
 
   return (
     <div id="publication">
+      {(publi.likedBy || publi.commentedBy) !== null &&
+        <SharedHeader likedBy={publi.likedBy} commentedBy={publi.commentedBy} />
+      }
       <Author author={publi.author} />
       <Content content={publi.content} />
       <Image image={publi.img} />
@@ -65,6 +71,8 @@ Publication.propTypes = {
     comments: PropTypes.arrayOf(
       PropTypes.shape(),
     ),
+    likedBy: PropTypes.string,
+    commentedBy: PropTypes.string,
   }).isRequired,
 };
 

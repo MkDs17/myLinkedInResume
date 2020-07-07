@@ -1,0 +1,16 @@
+@import 'src/styles/vars';
+
+#shared-header {
+  & .shared-header {
+    font-size: .75em;
+    font-weight: 300;
+    color: $light-gray;
+    font-family: 'Open Sans', sans-serif;
+    border-bottom: 1px solid #e6e9ec;
+    
+    & .shared-header-strong {
+      font-weight: 500;
+      color: $mid-gray;
+    }
+  }
+}
