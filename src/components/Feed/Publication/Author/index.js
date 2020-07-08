@@ -17,7 +17,7 @@ const Author = ({ author }) => {
       <div>
         <div className="flex">
           <div className="publication-author-avatar">
-            <img className="h-12 w-12 mr-2 object-cover rounded-full" alt="" src={`/public/assets/img/publi/avatar/${author.avatar}`} />
+            <img className="h-12 w-12 mr-2 object-cover rounded-full" alt="" src={`/src/public/assets/img/publi/avatar/${author.avatar}`} />
           </div>
           <div className="publication-author-infos flex flex-col">
             <div className="flex">

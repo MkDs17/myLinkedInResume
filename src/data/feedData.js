@@ -44,7 +44,7 @@ export default [
           {
             id: 1,
             author: 'Mickaël RASSICOT',
-            author_img: '/public/assets/img/publi/avatar/MR.png',
+            author_img: '/src/public/assets/img/publi/avatar/MR.png',
             author_connection_level: '1er',
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
@@ -57,7 +57,7 @@ export default [
           {
             id: 2,
             author: 'Mickaël RASSICOT',
-            author_img: '/public/assets/img/publi/avatar/MR.png',
+            author_img: '/src/public/assets/img/publi/avatar/MR.png',
             author_connection_level: '1er',
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
@@ -70,7 +70,7 @@ export default [
           {
             id: 3,
             author: 'Mickaël RASSICOT',
-            author_img: '/public/assets/img/publi/avatar/MR.png',
+            author_img: '/src/public/assets/img/publi/avatar/MR.png',
             author_connection_level: '1er',
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
@@ -83,7 +83,7 @@ export default [
           {
             id: 4,
             author: 'Mickaël RASSICOT',
-            author_img: '/public/assets/img/publi/avatar/MR.png',
+            author_img: '/src/public/assets/img/publi/avatar/MR.png',
             author_connection_level: '1er',
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
@@ -96,7 +96,7 @@ export default [
           {
             id: 5,
             author: 'Mickaël RASSICOT',
-            author_img: '/public/assets/img/publi/avatar/MR.png',
+            author_img: '/src/public/assets/img/publi/avatar/MR.png',
             author_connection_level: '1er',
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
@@ -111,7 +111,7 @@ export default [
       {
         id: 2,
         author: 'Bill Gates',
-        author_img: '/public/assets/img/publi/avatar/Bill_Gates.png',
+        author_img: '/src/public/assets/img/publi/avatar/Bill_Gates.png',
         author_connection_level: '1er',
         author_job: 'CEO',
         author_company: 'Microsoft',
@@ -124,7 +124,7 @@ export default [
           {
             id: 1,
             author: 'Elon Musk',
-            author_img: '/public/assets/img/publi/avatar/Elon_Musk.jpg',
+            author_img: '/src/public/assets/img/publi/avatar/Elon_Musk.jpg',
             author_connection_level: '1er',
             author_job: 'CEO',
             author_company: 'Tesla & SpaceX',
@@ -137,7 +137,7 @@ export default [
           {
             id: 2,
             author: 'Elon Musk',
-            author_img: '/public/assets/img/publi/avatar/Elon_Musk.jpg',
+            author_img: '/src/public/assets/img/publi/avatar/Elon_Musk.jpg',
             author_connection_level: '1er',
             author_job: 'CEO',
             author_company: 'Tesla & SpaceX',
@@ -152,7 +152,7 @@ export default [
       {
         id: 1,
         author: 'Sundar Pichai',
-        author_img: '/public/assets/img/publi/avatar/Sundar_Pichai.jpg',
+        author_img: '/src/public/assets/img/publi/avatar/Sundar_Pichai.jpg',
         author_connection_level: '1er',
         author_job: 'CEO',
         author_company: 'Google',
@@ -165,7 +165,7 @@ export default [
           {
             id: 1,
             author: 'Xavier Niel',
-            author_img: '/public/assets/img/publi/avatar/Xavier_Niel.jpg',
+            author_img: '/src/public/assets/img/publi/avatar/Xavier_Niel.jpg',
             author_connection_level: '1er',
             author_job: 'Fondateur',
             author_company: 'Illiad',
@@ -178,7 +178,7 @@ export default [
           {
             id: 2,
             author: 'Sundar Pichai',
-            author_img: '/public/assets/img/publi/avatar/Sundar_Pichai.jpg',
+            author_img: '/src/public/assets/img/publi/avatar/Sundar_Pichai.jpg',
             author_connection_level: '1er',
             author_job: 'CEO',
             author_company: 'Google',
@@ -191,7 +191,7 @@ export default [
           {
             id: 3,
             author: 'Dario Spagnolo',
-            author_img: '/public/assets/img/publi/avatar/Dario_Spagnolo.jpg',
+            author_img: '/src/public/assets/img/publi/avatar/Dario_Spagnolo.jpg',
             author_connection_level: '1er',
             author_job: 'Président et co-fondateur',
             author_company: 'O\'clock',
@@ -233,7 +233,7 @@ export default [
       {
         id: 1,
         author: 'Mickaël RASSICOT',
-        author_img: '/public/assets/img/publi/avatar/MR.png',
+        author_img: '/src/public/assets/img/publi/avatar/MR.png',
         author_connection_level: '1er',
         author_job: 'Développeur Web - Front End - React.Js',
         author_company: null,
@@ -273,7 +273,7 @@ export default [
       {
         id: 1,
         author: 'Elisabeth Borne',
-        author_img: '/public/assets/img/publi/avatar/Elisabeth_Borne.jpg',
+        author_img: '/src/public/assets/img/publi/avatar/Elisabeth_Borne.jpg',
         author_connection_level: '1er',
         author_job: 'Ministre du Travail, de l\'Emploi et de l\'Insertion',
         author_company: null,
@@ -286,7 +286,7 @@ export default [
           {
             id: 1,
             author: 'Mickaël RASSICOT',
-            author_img: '/public/assets/img/publi/avatar/MR.png',
+            author_img: '/src/public/assets/img/publi/avatar/MR.png',
             author_connection_level: '1er',
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
@@ -311,7 +311,7 @@ export default [
       publish_date: '14/05/2020',
     },
     content: 'Pendant ce temps dédié à la préparation de mon TP, j\'ai profité de mon temps libre (le peu qu\'il me restait ...) pour travailler sur un projet qui me tiens a cœur. Je suis fan de photographie, j\'ai donc créé un site qui répertorie quelques unes de mes photos avec des informations (techniques) pour chaque photo, ainsi que leur géolocalisation. La suite en commentaire ...',
-    img: '/public/assets/img/publi/img/mk-portfolio.png',
+    img: '/src/public/assets/img/publi/img/mk-portfolio.png',
     stats: {
       counting_views: randomNumber(10000, 11000),
       notifs: {
@@ -328,7 +328,7 @@ export default [
       {
         id: 1,
         author: 'Mickaël RASSICOT',
-        author_img: '/public/assets/img/publi/avatar/MR.png',
+        author_img: '/src/public/assets/img/publi/avatar/MR.png',
         author_connection_level: '1er',
         author_job: 'Développeur Web - Front End - React.Js',
         author_company: null,
@@ -341,7 +341,7 @@ export default [
       {
         id: 2,
         author: 'Mickaël RASSICOT',
-        author_img: '/public/assets/img/publi/avatar/MR.png',
+        author_img: '/src/public/assets/img/publi/avatar/MR.png',
         author_connection_level: '1er',
         author_job: 'Développeur Web - Front End - React.Js',
         author_company: null,
@@ -354,7 +354,7 @@ export default [
           {
             id: 1,
             author: 'Mickaël RASSICOT',
-            author_img: '/public/assets/img/publi/avatar/MR.png',
+            author_img: '/src/public/assets/img/publi/avatar/MR.png',
             author_connection_level: '1er',
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
@@ -367,7 +367,7 @@ export default [
           {
             id: 2,
             author: 'Mickaël RASSICOT',
-            author_img: '/public/assets/img/publi/avatar/MR.png',
+            author_img: '/src/public/assets/img/publi/avatar/MR.png',
             author_connection_level: '1er',
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
@@ -380,7 +380,7 @@ export default [
           {
             id: 3,
             author: 'Mickaël RASSICOT',
-            author_img: '/public/assets/img/publi/avatar/MR.png',
+            author_img: '/src/public/assets/img/publi/avatar/MR.png',
             author_connection_level: '1er',
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
@@ -393,7 +393,7 @@ export default [
           {
             id: 4,
             author: 'Mickaël RASSICOT',
-            author_img: '/public/assets/img/publi/avatar/MR.png',
+            author_img: '/src/public/assets/img/publi/avatar/MR.png',
             author_connection_level: '1er',
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
@@ -406,7 +406,7 @@ export default [
           {
             id: 5,
             author: 'Mickaël RASSICOT',
-            author_img: '/public/assets/img/publi/avatar/MR.png',
+            author_img: '/src/public/assets/img/publi/avatar/MR.png',
             author_connection_level: '1er',
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
@@ -419,7 +419,7 @@ export default [
           {
             id: 6,
             author: 'Mickaël RASSICOT',
-            author_img: '/public/assets/img/publi/avatar/MR.png',
+            author_img: '/src/public/assets/img/publi/avatar/MR.png',
             author_connection_level: '1er',
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
@@ -434,7 +434,7 @@ export default [
       {
         id: 3,
         author: 'Mickaël RASSICOT',
-        author_img: '/public/assets/img/publi/avatar/MR.png',
+        author_img: '/src/public/assets/img/publi/avatar/MR.png',
         author_connection_level: '1er',
         author_job: 'Développeur Web - Front End - React.Js',
         author_company: null,
@@ -447,7 +447,7 @@ export default [
       {
         id: 4,
         author: 'Mickaël RASSICOT',
-        author_img: '/public/assets/img/publi/avatar/MR.png',
+        author_img: '/src/public/assets/img/publi/avatar/MR.png',
         author_connection_level: '1er',
         author_job: 'Développeur Web - Front End - React.Js',
         author_company: null,
@@ -551,7 +551,7 @@ export default [
       publish_date: '23/03/2020',
     },
     content: 'Je vous présente un petit projet sur lequel je travaille depuis quelques jours. Il s\'agit d\'une petite app permettant le login et l\'accès à un dashboard utilisateur (Full JS). Ce projet m\'a permis de découvrir NodeJS, ExpressJS et TypeORM. Le projet est open source et en ligne, liens en commentaires',
-    img: '/public/assets/img/publi/img/loginApp.gif',
+    img: '/src/public/assets/img/publi/img/loginApp.gif',
     stats: {
       counting_views: randomNumber(5500, 6000),
       notifs: {
@@ -568,7 +568,7 @@ export default [
       {
         id: 1,
         author: 'Mickaël RASSICOT',
-        author_img: '/public/assets/img/publi/avatar/MR.png',
+        author_img: '/src/public/assets/img/publi/avatar/MR.png',
         author_connection_level: '1er',
         author_job: 'Développeur Web - Front End - React.Js',
         author_company: null,
@@ -581,7 +581,7 @@ export default [
       {
         id: 2,
         author: 'Mickaël RASSICOT',
-        author_img: '/public/assets/img/publi/avatar/MR.png',
+        author_img: '/src/public/assets/img/publi/avatar/MR.png',
         author_connection_level: '1er',
         author_job: 'Développeur Web - Front End - React.Js',
         author_company: null,
@@ -594,7 +594,7 @@ export default [
       {
         id: 3,
         author: 'Mickaël RASSICOT',
-        author_img: '/public/assets/img/publi/avatar/MR.png',
+        author_img: '/src/public/assets/img/publi/avatar/MR.png',
         author_connection_level: '1er',
         author_job: 'Développeur Web - Front End - React.Js',
         author_company: null,
@@ -607,7 +607,7 @@ export default [
       {
         id: 3,
         author: 'Mickaël RASSICOT',
-        author_img: '/public/assets/img/publi/avatar/MR.png',
+        author_img: '/src/public/assets/img/publi/avatar/MR.png',
         author_connection_level: '1er',
         author_job: 'Développeur Web - Front End - React.Js',
         author_company: null,
@@ -620,7 +620,7 @@ export default [
       {
         id: 4,
         author: 'Mickaël RASSICOT',
-        author_img: '/public/assets/img/publi/avatar/MR.png',
+        author_img: '/src/public/assets/img/publi/avatar/MR.png',
         author_connection_level: '1er',
         author_job: 'Développeur Web - Front End - React.Js',
         author_company: null,
@@ -660,7 +660,7 @@ export default [
       {
         id: 1,
         author: 'Mickaël RASSICOT',
-        author_img: '/public/assets/img/publi/avatar/MR.png',
+        author_img: '/src/public/assets/img/publi/avatar/MR.png',
         author_connection_level: '1er',
         author_job: 'Développeur Web - Front End - React.Js',
         author_company: null,
@@ -686,7 +686,7 @@ export default [
           {
             id: 1,
             author: 'Mickaël RASSICOT',
-            author_img: '/public/assets/img/publi/avatar/MR.png',
+            author_img: '/src/public/assets/img/publi/avatar/MR.png',
             author_connection_level: '1er',
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
@@ -781,7 +781,7 @@ export default [
       {
         id: 1,
         author: 'Mickaël RASSICOT',
-        author_img: '/public/assets/img/publi/avatar/MR.png',
+        author_img: '/src/public/assets/img/publi/avatar/MR.png',
         author_connection_level: '1er',
         author_job: 'Développeur Web - Front End - React.Js',
         author_company: null,
@@ -794,7 +794,7 @@ export default [
       {
         id: 2,
         author: 'Mickaël RASSICOT',
-        author_img: '/public/assets/img/publi/avatar/MR.png',
+        author_img: '/src/public/assets/img/publi/avatar/MR.png',
         author_connection_level: '1er',
         author_job: 'Développeur Web - Front End - React.Js',
         author_company: null,
@@ -807,7 +807,7 @@ export default [
       {
         id: 3,
         author: 'Mickaël RASSICOT',
-        author_img: '/public/assets/img/publi/avatar/MR.png',
+        author_img: '/src/public/assets/img/publi/avatar/MR.png',
         author_connection_level: '1er',
         author_job: 'Développeur Web - Front End - React.Js',
         author_company: null,
@@ -820,7 +820,7 @@ export default [
       {
         id: 4,
         author: 'Mickaël RASSICOT',
-        author_img: '/public/assets/img/publi/avatar/MR.png',
+        author_img: '/src/public/assets/img/publi/avatar/MR.png',
         author_connection_level: '1er',
         author_job: 'Développeur Web - Front End - React.Js',
         author_company: null,
@@ -860,7 +860,7 @@ export default [
       {
         id: 1,
         author: 'Didier Deschamps',
-        author_img: '/public/assets/img/publi/avatar/Didier_Deschamps.jpg',
+        author_img: '/src/public/assets/img/publi/avatar/Didier_Deschamps.jpg',
         author_connection_level: '1er',
         author_job: 'Champion du monde et Entraineur',
         author_company: 'FFF',
@@ -900,7 +900,7 @@ export default [
       {
         id: 1,
         author: 'Dan Abramov',
-        author_img: '/public/assets/img/publi/avatar/Dan_Abramov.png',
+        author_img: '/src/public/assets/img/publi/avatar/Dan_Abramov.png',
         author_connection_level: '1er',
         author_job: 'Co-author of Redux and Create React App',
         author_company: 'ReactJS',
@@ -913,7 +913,7 @@ export default [
           {
             id: 1,
             author: 'Mickaël RASSICOT',
-            author_img: '/public/assets/img/publi/avatar/MR.png',
+            author_img: '/src/public/assets/img/publi/avatar/MR.png',
             author_connection_level: '1er',
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
@@ -955,7 +955,7 @@ export default [
       {
         id: 1,
         author: 'Mickaël RASSICOT',
-        author_img: '/public/assets/img/publi/avatar/MR.png',
+        author_img: '/src/public/assets/img/publi/avatar/MR.png',
         author_connection_level: '1er',
         author_job: 'Développeur Web - Front End - React.Js',
         author_company: null,
@@ -968,7 +968,7 @@ export default [
       {
         id: 2,
         author: 'Mickaël RASSICOT',
-        author_img: '/public/assets/img/publi/avatar/MR.png',
+        author_img: '/src/public/assets/img/publi/avatar/MR.png',
         author_connection_level: '1er',
         author_job: 'Développeur Web - Front End - React.Js',
         author_company: null,
@@ -981,7 +981,7 @@ export default [
       {
         id: 3,
         author: 'Mickaël RASSICOT',
-        author_img: '/public/assets/img/publi/avatar/MR.png',
+        author_img: '/src/public/assets/img/publi/avatar/MR.png',
         author_connection_level: '1er',
         author_job: 'Développeur Web - Front End - React.Js',
         author_company: null,
@@ -994,7 +994,7 @@ export default [
       {
         id: 4,
         author: 'Mickaël RASSICOT',
-        author_img: '/public/assets/img/publi/avatar/MR.png',
+        author_img: '/src/public/assets/img/publi/avatar/MR.png',
         author_connection_level: '1er',
         author_job: 'Développeur Web - Front End - React.Js',
         author_company: null,
@@ -1047,7 +1047,7 @@ export default [
           {
             id: 1,
             author: 'Mickaël RASSICOT',
-            author_img: '/public/assets/img/publi/avatar/MR.png',
+            author_img: '/src/public/assets/img/publi/avatar/MR.png',
             author_connection_level: '1er',
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
@@ -1060,7 +1060,7 @@ export default [
           {
             id: 2,
             author: 'Mickaël RASSICOT',
-            author_img: '/public/assets/img/publi/avatar/MR.png',
+            author_img: '/src/public/assets/img/publi/avatar/MR.png',
             author_connection_level: '1er',
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
@@ -1073,7 +1073,7 @@ export default [
           {
             id: 3,
             author: 'Mickaël RASSICOT',
-            author_img: '/public/assets/img/publi/avatar/MR.png',
+            author_img: '/src/public/assets/img/publi/avatar/MR.png',
             author_connection_level: '1er',
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
@@ -1086,7 +1086,7 @@ export default [
           {
             id: 4,
             author: 'Mickaël RASSICOT',
-            author_img: '/public/assets/img/publi/avatar/MR.png',
+            author_img: '/src/public/assets/img/publi/avatar/MR.png',
             author_connection_level: '1er',
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
@@ -1099,7 +1099,7 @@ export default [
           {
             id: 5,
             author: 'Mickaël RASSICOT',
-            author_img: '/public/assets/img/publi/avatar/MR.png',
+            author_img: '/src/public/assets/img/publi/avatar/MR.png',
             author_connection_level: '1er',
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
@@ -1112,7 +1112,7 @@ export default [
           {
             id: 6,
             author: 'Mickaël RASSICOT',
-            author_img: '/public/assets/img/publi/avatar/MR.png',
+            author_img: '/src/public/assets/img/publi/avatar/MR.png',
             author_connection_level: '1er',
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
@@ -1125,7 +1125,7 @@ export default [
           {
             id: 7,
             author: 'Mickaël RASSICOT',
-            author_img: '/public/assets/img/publi/avatar/MR.png',
+            author_img: '/src/public/assets/img/publi/avatar/MR.png',
             author_connection_level: '1er',
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
@@ -1138,7 +1138,7 @@ export default [
           {
             id: 8,
             author: 'Mickaël RASSICOT',
-            author_img: '/public/assets/img/publi/avatar/MR.png',
+            author_img: '/src/public/assets/img/publi/avatar/MR.png',
             author_connection_level: '1er',
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
@@ -1151,7 +1151,7 @@ export default [
           {
             id: 9,
             author: 'Mickaël RASSICOT',
-            author_img: '/public/assets/img/publi/avatar/MR.png',
+            author_img: '/src/public/assets/img/publi/avatar/MR.png',
             author_connection_level: '1er',
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
@@ -1192,7 +1192,7 @@ export default [
           {
             id: 2,
             author: 'Mickaël RASSICOT',
-            author_img: '/public/assets/img/publi/avatar/MR.png',
+            author_img: '/src/public/assets/img/publi/avatar/MR.png',
             author_connection_level: '1er',
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
@@ -1217,7 +1217,7 @@ export default [
       publish_date: '30/08/2019',
     },
     content: 'Première semaine assez chargée mais qui est passée à une vitesse folle ! Le concept est tout de même assez dingue, pouvoir étudier de chez soi, en télétravail avec un prof et des élèves dans une "classe virtuelle". On n\'arrête plus le progrès.',
-    img: '/public/assets/img/publi/img/first-days.png',
+    img: '/src/public/assets/img/publi/img/first-days.png',
     stats: {
       counting_views: randomNumber(1000, 1500),
       notifs: {
@@ -1234,7 +1234,7 @@ export default [
       {
         id: 1,
         author: 'Dario Spagnolo',
-        author_img: '/public/assets/img/publi/avatar/Dario_Spagnolo.jpg',
+        author_img: '/src/public/assets/img/publi/avatar/Dario_Spagnolo.jpg',
         author_connection_level: '1er',
         author_job: 'Président et co-fondateur',
         author_company: 'O\'clock',
@@ -1247,7 +1247,7 @@ export default [
           {
             id: 1,
             author: 'Jérémy Guédé',
-            author_img: '/public/assets/img/publi/avatar/Jeremy_Guede.jpg',
+            author_img: '/src/public/assets/img/publi/avatar/Jeremy_Guede.jpg',
             author_connection_level: '1er',
             author_job: 'Team Admission',
             author_company: 'Ecole O\'clock',
@@ -1260,7 +1260,7 @@ export default [
           {
             id: 2,
             author: 'Mickaël RASSICOT',
-            author_img: '/public/assets/img/publi/avatar/MR.png',
+            author_img: '/src/public/assets/img/publi/avatar/MR.png',
             author_connection_level: '1er',
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,

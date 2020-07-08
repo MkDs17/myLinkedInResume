@@ -86,7 +86,7 @@ const Actions = ({ viewMoreContent, viewMoreAction, totalNotification, setTotalN
       <div className="publication-actions-buttons flex items-center">
 
         <button type="button" className={likeButtonClassname} onClick={() => addLike()} onMouseOver={mouseOver} onMouseOut={mouseOut}>
-          <img className="" alt="like" src={`/public/assets/img/buttons/${likedButtonHTMLContent.img}`} />
+          <img className="" alt="like" src={`/src/public/assets/img/buttons/${likedButtonHTMLContent.img}`} />
           <span className="ml-1">{likedButtonHTMLContent.text}</span>
         </button>
 

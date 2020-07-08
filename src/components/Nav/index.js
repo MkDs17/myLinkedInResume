@@ -1,17 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 import './nav.scss';
 
 const Nav = () => {
-  const [showMenu, setShowMenu] = useState(false);
-
-  const toggleMenu = () => {
-    setShowMenu(!showMenu);
-  };
-  const downloadCV = () => {
-    console.log('coucouCV');
-  };
-
   return (
     <div id="nav">
       <nav className="flex items-center justify-between flex-wrap px-4 py-2 bg-white shadow">

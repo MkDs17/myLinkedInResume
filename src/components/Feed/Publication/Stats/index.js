@@ -9,27 +9,27 @@ const Stats = ({ stats, viewMoreAction, totalNotification, commentsCounter }) =>
       <div className="publication-stats-icons flex items-center">
         {stats.notifs.like > 0 && (
           <div className="publication-stats-icons-like">
-            <img className="object-cover rounded-full" alt="like" src="/public/assets/img/icons/like.svg" />
+            <img className="object-cover rounded-full" alt="like" src="/src/public/assets/img/icons/like.svg" />
           </div>
         )}
         {stats.notifs.clap > 0 && (
           <div className="publication-stats-icons-clap">
-            <img className="object-cover rounded-full" alt="clap" src="/public/assets/img/icons/clap.svg" />
+            <img className="object-cover rounded-full" alt="clap" src="/src/public/assets/img/icons/clap.svg" />
           </div>
         )}
         {stats.notifs.love > 0 && (
           <div className="publication-stats-icons-love">
-            <img className="object-cover rounded-full" alt="love" src="/public/assets/img/icons/love.svg" />
+            <img className="object-cover rounded-full" alt="love" src="/src/public/assets/img/icons/love.svg" />
           </div>
         )}
         {stats.notifs.interest > 0 && (
           <div className="publication-stats-icons-thinking">
-            <img className="object-cover rounded-full" alt="thinking" src="/public/assets/img/icons/thinking.svg" />
+            <img className="object-cover rounded-full" alt="thinking" src="/src/public/assets/img/icons/thinking.svg" />
           </div>
         )}
         {stats.notifs.idea > 0 && (
           <div className="publication-stats-icons-idea">
-            <img className="object-cover rounded-full" alt="idea" src="/public/assets/img/icons/idea.svg" />
+            <img className="object-cover rounded-full" alt="idea" src="/src/public/assets/img/icons/idea.svg" />
           </div>
         )}
         <div className="publication-stats-counting">
