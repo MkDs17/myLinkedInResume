@@ -20,13 +20,6 @@ const Nav = () => {
         </div>
         <div className="flex items-center">
           <button onClick={downloadCV} type="button" className="download-button px-6 py-3 mr-6 shadow-lg rounded-md font-semibold">Mon CV</button>
-          <button onClick={toggleMenu} type="button" className="flex items-center">
-            <img
-              className="fill-current h-12"
-              alt="logo mr-webdev"
-              src={`/public/assets/img/${showMenu ? 'avataaars.svg' : 'avataaars1.svg'}`}
-            />
-          </button>
         </div>
       </nav>
     </div>
