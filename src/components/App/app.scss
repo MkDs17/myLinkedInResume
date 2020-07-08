@@ -6,19 +6,56 @@
   position: relative;
   font-family: Poppins;
 
-  .blue {
-    color: #0073b1;
+  & .notification-container-bottom-left {
+    width: 400px;
+
+    & .notification-custom {
+      border-radius: 4px;
+      padding: .8em 1.1em;
+      display: flex;
+    
+      & .notification-custom-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 23px;
+        color: white;
+        padding-right: .8em;
+      }
+    
+      & .notification-custom-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    
+        &-title {
+          font-size: 1.3em;
+          font-weight: 500;
+          letter-spacing: .5px;
+          text-transform: uppercase;
+          color: $grey-background;
+          margin-bottom: .3em;
+        }
+        &-message {
+          font-size: 12px;
+          font-weight: 400;
+          font-family: 'Open Sans', sans-serif;
+          line-height: 1.2em;
+          color: $grey-background;
+          text-align: justify;
+        }
+      }
+    }
   }
-  .green {
-    color: #2f7b15;
+  
+  .notification-custom-welcome {
+    background-color: rgba($linkedin-blue, .95) ;
+    border-left: 6px solid #005a8a;
   }
-  .red {
-    color: #e55800;
-  }
-  .yellow {
-    color: #9b8443;
-  }
-  .purple {
-    color: #a76969;
+  
+  .notification-custom-warning {
+    background-color: rgba(#ff9800, .95) ;
+    border-left: 6px solid #f57c00;
   }
 }

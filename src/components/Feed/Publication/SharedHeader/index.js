@@ -15,8 +15,13 @@ const SharedHeader = ({ likedBy, commentedBy }) => {
 };
 
 SharedHeader.propTypes = {
-  likedBy: PropTypes.string.isRequired,
-  commentedBy: PropTypes.string.isRequired,
+  likedBy: PropTypes.string,
+  commentedBy: PropTypes.string,
+};
+
+SharedHeader.defaultProps = {
+  likedBy: null,
+  commentedBy: null,
 };
 
 export default SharedHeader;

@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactNotification from 'react-notifications-component';
 
 import './app.scss';
 
@@ -8,6 +9,7 @@ import Feed from '../Feed';
 function App() {
   return (
     <div id="app">
+      <ReactNotification />
       <Nav />
       <Feed />
     </div>

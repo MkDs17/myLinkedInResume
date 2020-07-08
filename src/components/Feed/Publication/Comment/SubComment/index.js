@@ -6,7 +6,6 @@ import './sub-comment.scss';
 import { calculateTimeBtwTwoDates, checkIfTextContainsLink } from '../../../../../utils/funtions';
 
 const SubComment = ({ subcomment }) => {
-  console.log('subcomment', subcomment);
   const [contentToShow, setcontentToShow] = useState(subcomment.content);
   const [excerpt, setExcerpt] = useState(false);
 

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import addNotification from '../../utils/addNotification';
 
 import './feed.scss';
 
@@ -7,6 +8,10 @@ import data from '../../data/feedData';
 import Publication from './Publication';
 
 const Feed = () => {
+  useEffect(() => {
+    addNotification('welcome');
+  }, []);
+
   return (
     <div id="feed">
       <div className="feed p-8 flex items-center justify-center">
