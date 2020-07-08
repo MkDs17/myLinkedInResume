@@ -57,4 +57,18 @@
     background-color: rgba(#ff9800, .95) ;
     border-left: 6px solid #f57c00;
   }
+
+  .feed-button {
+    position: absolute;
+    bottom: 1.5em;
+    right: 1.5em;
+    font-size: 2em;
+    border: 1px solid $linkedin-blue;
+    border-radius: 50px;
+    background-color: $linkedin-blue;
+    color: $quasi-white;
+  }
+  .feed-button:hover {
+    cursor: pointer;
+  }
 }

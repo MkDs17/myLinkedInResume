@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { IoIosArrowRoundDown } from 'react-icons/io';
 import ReactNotification from 'react-notifications-component';
 
 import './app.scss';
@@ -12,6 +13,7 @@ function App() {
       <ReactNotification />
       <Nav />
       <Feed />
+      {/* <IoIosArrowRoundDown className="feed-button shadow-xl" type="button" label="Accéder au bas de la page" onClick={() => accessToTheTop()} /> */}
     </div>
   );
 }
