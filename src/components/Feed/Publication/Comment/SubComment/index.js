@@ -72,7 +72,7 @@ const SubComment = ({ subcomment }) => {
               </svg>
             </div>
             <div className="publication-subcomment-stats-like-separator mx-2">•</div>
-            <div className="publication-subcomment-stats-like-count">{subcomment.stats.like} J'aime</div>
+            <div className="publication-subcomment-stats-like-count">{subcomment.stats.like.toLocaleString('fr-FR')} J'aime</div>
           </div>
 
           <div>|</div>

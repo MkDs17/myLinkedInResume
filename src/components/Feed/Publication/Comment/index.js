@@ -94,7 +94,7 @@ const Comment = ({ comment }) => {
               </svg>
             </div>
             <div className="publication-comment-stats-like-separator mx-2">•</div>
-            <div className="publication-comment-stats-like-count">{comment.stats.like} J'aime</div>
+            <div className="publication-comment-stats-like-count">{comment.stats.like.toLocaleString('fr-FR')} J'aime</div>
           </div>
 
           <div>|</div>

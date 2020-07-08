@@ -33,7 +33,7 @@ const addNotification = (status) => {
       customClass = "guide",
       //emoji = "sweat_smile",
       title = "Promis c'est la dernière",
-      content = "Pour une meilleure compréhension de mon histoire, l'équipe technique et moi-même vous conseillons une lecture de bas en haut."
+      content = "Pour une meilleure compréhension de l'histoire, l'équipe technique et moi-même vous conseillons une lecture de bas en haut."
     }
     break;
     

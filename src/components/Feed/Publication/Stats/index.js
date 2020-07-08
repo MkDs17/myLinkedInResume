@@ -34,7 +34,7 @@ const Stats = ({ stats, viewMoreAction, totalNotification, commentsCounter }) =>
         )}
         <div className="publication-stats-counting">
           <span className="publication-stats-counting-notifs">
-            {totalNotification}
+            {totalNotification.toLocaleString('fr-FR')}
           </span>
         </div>
       </div>
