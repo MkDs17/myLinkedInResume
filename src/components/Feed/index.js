@@ -10,6 +10,10 @@ import Publication from './Publication';
 const Feed = () => {
   useEffect(() => {
     addNotification('welcome');
+
+    setTimeout(()=>{
+      addNotification('guide');
+    }, 10000);
   }, []);
 
   return (

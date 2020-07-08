@@ -29,6 +29,13 @@ const addNotification = (status) => {
       content = "Les dialogues présents sur cette page sont une oeuvre de pure fiction. En conséquence, toute ressemblance, ou similitude avec des personnages et des faits existants ou ayant existé, ne saurait être que coïncidence fortuite."
     }
     break;
+    case 'guide': {
+      customClass = "guide",
+      //emoji = "sweat_smile",
+      title = "Promis c'est la dernière",
+      content = "Pour une meilleure compréhension de mon histoire, l'équipe technique et moi-même vous conseillons une lecture de bas en haut."
+    }
+    break;
     
     default: {
       customClass = "warning",
