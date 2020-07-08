@@ -14,12 +14,12 @@ const Nav = () => {
 
   return (
     <div id="nav">
-      <nav className="flex items-center justify-between flex-wrap px-4 py-1 bg-white shadow">
+      <nav className="flex items-center justify-between flex-wrap px-4 py-2 bg-white shadow">
         <div className="flex items-center text-white mr-6">
           <img className="fill-current h-8 mr-2" alt="logo mr-webdev" src="/public/assets/img/logo.png" srcSet="/public/assets/img/logo.png" />
         </div>
         <div className="flex items-center">
-          <button onClick={downloadCV} type="button" className="download-button px-6 py-3 mr-6 shadow-lg rounded-md font-semibold">Mon CV</button>
+          <a href="https://cv.mr-webdev.com" target="_blank" rel="noreferrer" className="link-button px-4 py-2 mr-4 shadow-lg rounded-md font-semibold">Mon CV</a>
         </div>
       </nav>
     </div>
