@@ -551,7 +551,7 @@ export default [
       publish_date: '23/03/2020',
     },
     content: 'Je vous présente un petit projet sur lequel je travaille depuis quelques jours. Il s\'agit d\'une petite app permettant le login et l\'accès à un dashboard utilisateur (Full JS). Ce projet m\'a permis de découvrir NodeJS, ExpressJS et TypeORM. Le projet est open source et en ligne, liens en commentaires',
-    img: '/src/public/assets/img/publi/img/loginApp.gif',
+    img: null,
     stats: {
       counting_views: randomNumber(5500, 6000),
       notifs: {
