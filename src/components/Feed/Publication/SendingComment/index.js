@@ -21,7 +21,7 @@ const SendingComment = () => {
 
     <div className="publication-sending-comment flex px-4 pt-4">
       <div className="publication-sending-comment-author-avatar">
-        <img className="h-9 w-9 mr-2 object-cover rounded-full" alt="" src="/public/assets/img/unknown-avatar.png" />
+        <img className="h-9 w-9 mr-2 object-cover rounded-full" alt="" src="/src/public/assets/img/unknown-avatar.png" />
       </div>
       <div className="publication-sending-comment-content w-full">
         <form>
