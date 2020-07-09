@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 import './actions.scss';
 
-import { dynamicContentButton } from '../../../../utils/funtions';
+import {dynamicContentButton} from '../../../../utils/funtions';
 
 import LikeChoice from './LikeChoice';
 
