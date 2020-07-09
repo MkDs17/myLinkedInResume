@@ -1,3 +1,7 @@
 module.exports = {
-  purge: false,
+  purge: {
+    enabled: true,
+    content: ['./src/**/*.js'],
+  },
+  // ...
 };
