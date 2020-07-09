@@ -23,25 +23,25 @@ const LikeChoice = ({ className, setClicked, setLikedButtonHover, setlikedButton
 
       <div className="publication-action-like-choice--like" onClick={() => onActionLikeChoice('blue')}>
         <span className="publication-action-like-choice-img-popup popup rounded-full">J'aime</span>
-        <img className="publication-action-like-choice-img" alt="like" src="/public/assets/img/buttons/action-like.svg" />
+        <img className="publication-action-like-choice-img" alt="like" src="/src/public/assets/img/buttons/action-like.svg" />
       </div>
 
       <div className="publication-action-like-choice--clap" onClick={() => onActionLikeChoice('green')}>
         <span className="publication-action-like-choice-img-popup popup rounded-full">Bravo</span>
-        <img className="publication-action-like-choice-img" alt="like" src="/public/assets/img/buttons/action-clap.svg" />
+        <img className="publication-action-like-choice-img" alt="like" src="/src/public/assets/img/buttons/action-clap.svg" />
       </div>
 
       <div className="publication-action-like-choice--love" onClick={() => onActionLikeChoice('red')}>
         <span className="publication-action-like-choice-img-popup popup rounded-full">J'adore</span>
-        <img className="publication-action-like-choice-img" alt="like" src="/public/assets/img/buttons/action-love.svg" />
+        <img className="publication-action-like-choice-img" alt="like" src="/src/public/assets/img/buttons/action-love.svg" />
       </div>
       <div className="publication-action-like-choice--idea" onClick={() => onActionLikeChoice('yellow')}>
         <span className="publication-action-like-choice-img-popup popup rounded-full">Instructif</span>
-        <img className="publication-action-like-choice-img" alt="like" src="/public/assets/img/buttons/action-idea.svg" />
+        <img className="publication-action-like-choice-img" alt="like" src="/src/public/assets/img/buttons/action-idea.svg" />
       </div>
       <div className="publication-action-like-choice--interest" onClick={() => onActionLikeChoice('purple')}>
         <span className="publication-action-like-choice-img-popup popup rounded-full">Intéressant</span>
-        <img className="publication-action-like-choice-img" alt="like" src="/public/assets/img/buttons/action-interest.svg" />
+        <img className="publication-action-like-choice-img" alt="like" src="/src/public/assets/img/buttons/action-interest.svg" />
       </div>
     </div>
   );
