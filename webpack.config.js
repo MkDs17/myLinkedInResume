@@ -99,13 +99,14 @@ module.exports = {
       },
       // Images
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.(png|svg|jpg|gif|ico)$/,
         use: [
           {
-            loader: 'file-loader',
             options: {
+              name: '[path][name].[ext]',
               outputPath: 'assets/',
             },
+            loader: 'file-loader',
           },
         ],
       },
