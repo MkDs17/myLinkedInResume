@@ -13,7 +13,7 @@ export default [
       company: null,
       publish_date: new Date().toLocaleDateString('fr-FR'),
     },
-    content: 'Je postule depuis maintenant quelques semaines et j\'ai régulièrement comme retour le fait que je manque d\'expérience pour le poste recherché (Développeur front-end). Je me suis mis en tête de présenter au recruteur un CV 3.0 afin de montrer de quoi je suis capable. Mon but est donc de reprendre le design du feed de LinkedIn pour raconter mon histoire, ma reconversion et cette dernière année assez folle à travers des posts. Original ? Je ne sais pas, l\'avenir nous le dira',
+    content: 'Je postule depuis maintenant quelques semaines et j\'ai régulièrement comme retour le fait que je manque d\'expérience pour le poste recherché (Développeur front-end). Je me suis mis en tête de présenter aux recruteurs un CV 3.0 afin de montrer de quoi je suis capable. Mon but est donc de reprendre le design du feed de LinkedIn pour raconter mon histoire, ma reconversion et cette dernière année assez folle au travers de posts. Original ? Je ne sais pas, l\'avenir nous le dira',
     img: 'https://media.giphy.com/media/F2WFyAfpfVfFe/giphy.gif',
     stats: {
       counting_views: randomNumber(1000000, 2000000),
@@ -75,7 +75,7 @@ export default [
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
             publish_date: '26/06/2020',
-            content: 'Pour enrichir mes composants j\'utilise un jeu de données que j\'ai créé de quelques 1400 lignes. J\'utilise la librairie "Faker" afin de créer des faux profils (ceux-ci changent à chaque rechargement de la page). Vous noterez cependant que certains profils sont crées par moi même "en dur".',
+            content: 'Pour enrichir mes composants j\'utilise un jeu de données que j\'ai créé de quelques 1400 lignes. J\'utilise la librairie "Faker" afin de créer des faux profils (ceux-ci changent à chaque rechargement de la page). Vous noterez cependant que certains profils sont créés par moi même "en dur".',
             stats: {
               like: randomNumber(10000, 20000),
             },
@@ -88,7 +88,7 @@ export default [
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
             publish_date: '26/06/2020',
-            content: 'De même pour le nombre de notifications et likes par posts, ceux-ci sont choisis aléatoirement en fonction de tranches que j\'ai stipulé. J\'ai pour cela utilisé la librairie "Lodash".',
+            content: 'De même pour le nombre de notifications et likes par post, ceux-ci sont choisis aléatoirement en fonction de tranches que j\'ai stipulé. J\'ai pour cela utilisé la librairie "Lodash".',
             stats: {
               like: randomNumber(10000, 20000),
             },
@@ -157,7 +157,7 @@ export default [
         author_job: 'CEO',
         author_company: 'Google',
         publish_date: new Date().toLocaleDateString('fr-FR'),
-        content: 'Non mais comment est-ce possible que ce super développeur soit toujours libre ? Allo les français il faut se réveiller !',
+        content: 'Non mais comment est-ce possible que ce super développeur soit toujours libre ? Allô les français il faut se réveiller !',
         stats: {
           like: randomNumber(500000, 600000),
         },
@@ -170,7 +170,7 @@ export default [
             author_job: 'Fondateur',
             author_company: 'Illiad',
             publish_date: new Date().toLocaleDateString('fr-FR'),
-            content: 'Ces américains, toujours à donner des leçons. Et toi pourquoi donc ne l\'embauches tu pas ?',
+            content: 'Ces américains, toujours à donner des leçons. Et toi, pourquoi ne l\'embauches-tu pas ?',
             stats: {
               like: randomNumber(500000, 600000),
             },
@@ -238,7 +238,7 @@ export default [
         author_job: 'Développeur Web - Front End - React.Js',
         author_company: null,
         publish_date: '26/06/2020',
-        content: 'Pourquoi m\'embaucher me direz-vous ? Et bien je vous laisse parcourir mon petit feed ci-dessous, vous pourrez avoir un aperçu de ma courbe d\'apprentissage et de mon sens de l\'humour hors pair ! Héhé ',
+        content: 'Pourquoi m\'embaucher me direz-vous ? Et bien je vous laisse parcourir mon petit feed ci-dessous, vous pourrez avoir un aperçu de ma courbe d\'apprentissage et de mon sens de l\'humour hors pair !',
         stats: {
           like: randomNumber(300, 400),
         },
@@ -310,7 +310,7 @@ export default [
       company: null,
       publish_date: '14/05/2020',
     },
-    content: 'Pendant ce temps dédié à la préparation de mon TP, j\'ai profité de mon temps libre (le peu qu\'il me restait ...) pour travailler sur un projet qui me tiens a cœur. Je suis fan de photographie, j\'ai donc créé un site qui répertorie quelques unes de mes photos avec des informations (techniques) pour chaque photo, ainsi que leur géolocalisation. La suite en commentaire ...',
+    content: 'Pendant ce temps dédié à la préparation de mon TP, j\'ai profité de mon temps libre (le peu qu\'il me restait) pour travailler sur un projet qui me tient à cœur. Je suis fan de photographie, j\'ai donc créé un site qui répertorie quelques unes de mes photos avec des informations (techniques) pour chaque photo, ainsi que leur géolocalisation. La suite en commentaire ...',
     img: '/src/public/assets/img/publi/img/mk-portfolio.png',
     stats: {
       counting_views: randomNumber(10000, 11000),
@@ -333,7 +333,7 @@ export default [
         author_job: 'Développeur Web - Front End - React.Js',
         author_company: null,
         publish_date: '14/05/2020',
-        content: 'Je m\'appuie sur React pour la partie Front-end notamment, et les informations affichées sont stockées en base de données. J\'utilise Node et Express pour l\'environnement serveur. Ce site est actuellement hébergé chez O2switch.',
+        content: 'Je m\'appuie sur React pour la partie Front-end notamment et les informations affichées sont stockées en base de données. J\'utilise Node et Express pour l\'environnement serveur. Ce site est actuellement hébergé chez O2switch.',
         stats: {
           like: randomNumber(300, 400),
         },
@@ -359,7 +359,7 @@ export default [
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
             publish_date: '14/05/2020',
-            content: 'Le slider sur la page d\'accueil, créé avec la librarie "react-slideshow-image", celui-ci fut assez simple à mettre en place. Très bonne documentation',
+            content: 'Le slider sur la page d\'accueil, créé avec la librarie "react-slideshow-image", celui-ci a été assez simple à mettre en place. Très bonne documentation',
             stats: {
               like: randomNumber(300, 400),
             },
@@ -385,7 +385,7 @@ export default [
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
             publish_date: '14/05/2020',
-            content: 'Le système de pagination, pas forcément visible pour l\'instant puisque j\ai limité le nombre d\'affichage de photo à 10 et que pour l\'instant je n\'en ai pas encore 10 de visible. Mais soyez patient ...',
+            content: 'Le système de pagination, pas forcément visible pour l\'instant puisque j\'ai limité le nombre d\'affichages de photos à 10 et que pour l\'instant je n\'en ai pas encore 10 de visible. Mais soyez patients ...',
             stats: {
               like: randomNumber(300, 400),
             },
@@ -398,7 +398,7 @@ export default [
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
             publish_date: '14/05/2020',
-            content: 'L\'affichage de deux style de Modal (ou Dimmer) selon le bouton cliqué concernant une photo. L\'une permettant d\'afficher la photo en grand dans une Lightbox, l\'autre permettant d\'afficher les informations concernant la photo (nom, lieu, infos techniques, géolocalisation)',
+            content: 'L\'affichage de deux styles de Modal (ou Dimmer) selon le bouton cliqué concernant une photo. L\'une permet d\'afficher la photo en grand dans une Lightbox, l\'autre, d\'afficher les informations concernant la photo (nom, lieu, infos techniques, géolocalisation)',
             stats: {
               like: randomNumber(300, 400),
             },
@@ -411,7 +411,7 @@ export default [
             author_job: 'Développeur Web - Front End - React.Js',
             author_company: null,
             publish_date: '14/05/2020',
-            content: 'Le plus génial pour la fin (à mon goût), le système de géolocalisation ! Pour cela j\'ai utilisé MapboxGL, alors je ne vais pas dire que tout a été simple parce la documentation est prévue pour du JS natif. Pour utiliser cette librairie avec React, il faut chercher, beaucoup chercher et tester, ce que j\'ai fait jusqu\'a trouver la recette miracle !. Il y a donc un composant principal qui gère deux types d\'affichage en fonction de ce qu\'on lui envoie comme argument au moment de l\'execution : soit on affiche tous les pins de toutes les photos (composant présent sur la page d\'accueil), soit on affiche un seul pin, celui de la photo séléctionnée (composant présent dans la partie informations d\'une image)',
+            content: 'Le plus génial pour la fin (à mon goût), le système de géolocalisation ! Pour cela j\'ai utilisé MapboxGL, alors je ne vais pas dire que tout a été simple parce la documentation est prévue pour du JS natif. Pour utiliser cette librairie avec React, il faut chercher, beaucoup chercher et tester, ce que j\'ai fait jusqu\'à trouver la recette miracle ! Il y a donc un composant principal qui gère deux types d\'affichage en fonction de ce qu\'on lui envoie comme argument au moment de l\'exécution : soit on affiche tous les pins de toutes les photos (composant présent sur la page d\'accueil), soit on affiche un seul pin, celui de la photo séléctionnée (composant présent dans la partie informations d\'une image)',
             stats: {
               like: randomNumber(300, 400),
             },
@@ -491,7 +491,7 @@ export default [
             author_job: fakeDatas[14].jobTitle,
             author_company: fakeDatas[14].company,
             publish_date: '14/05/2020',
-            content: 'Beau boulot ! Je pense aussi que ca serait bien que tu open-sourcises ton projet !',
+            content: 'Beau boulot ! Je pense aussi que ça serait bien que tu open-sourcises ton projet !',
             stats: {
               like: randomNumber(300, 400),
             },
@@ -599,7 +599,7 @@ export default [
         author_job: 'Développeur Web - Front End - React.Js',
         author_company: null,
         publish_date: '22/02/2020',
-        content: 'La communication entre le Front-End et le Back-end peut être parfois un peu longue (surtout quand cela fait longtemps que l\'on ne les a pas dérangé j\'ai l\'impression) donc, essayez d\'être patient. Vos conseils pour améliorer cela sont la bienvenue.',
+        content: 'La communication entre le Front-End et le Back-end peut être parfois un peu longue (surtout quand cela fait longtemps que l\'on ne les a pas dérangés j\'ai l\'impression) donc, essayez d\'être patient. Vos conseils pour améliorer cela sont les bienvenus.',
         stats: {
           like: randomNumber(300, 400),
         },
@@ -723,7 +723,7 @@ export default [
       company: null,
       publish_date: '06/02/2020',
     },
-    content: 'Une page se tourne, ma formation est maintenant finie. Je vais avoir quelques mois de libre pour préparer mes dossiers pour le passage du Titre Professionnel. Pour l\'instant pas de date fixée. Je vais surtout avoir un peu de temps libre pour coder les petits projets que j\'ai en tête.',
+    content: 'Une page se tourne, ma formation est maintenant finie. Je vais avoir quelques mois pour préparer mes dossiers pour le passage du Titre Professionnel. Pour l\'instant pas de date fixée. Je vais surtout avoir un peu de temps libre pour coder les petits projets que j\'ai en tête.',
     img: 'https://media.giphy.com/media/xKy2w6LehxxHa/giphy.gif',
     stats: {
       counting_views: randomNumber(4000, 4500),
@@ -746,7 +746,7 @@ export default [
         author_job: fakeDatas[10].jobTitle,
         author_company: fakeDatas[10].company,
         publish_date: '06/02/2020',
-        content: 'Félicitation !',
+        content: 'Félicitations !',
         stats: {
           like: randomNumber(10, 100),
         },
@@ -799,7 +799,7 @@ export default [
         author_job: 'Développeur Web - Front End - React.Js',
         author_company: null,
         publish_date: '06/02/2020',
-        content: 'Afin de mener à bien notre projet, nous avons utlisé la méthode agile et découpé notre mois en quatre sprints. Le premier sprint était consacré à la création de notre cahier des charges (arborescence, user-stories, routes, MCD, DD, wireframes)',
+        content: 'Afin de mener à bien notre projet, nous avons utilisé la méthode agile et découpé notre mois en quatre sprints. Le premier sprint était consacré à la création de notre cahier des charges (arborescence, user-stories, routes, MCD, DD, wireframes)',
         stats: {
           like: randomNumber(1200, 1400),
         },
@@ -812,7 +812,7 @@ export default [
         author_job: 'Développeur Web - Front End - React.Js',
         author_company: null,
         publish_date: '06/02/2020',
-        content: 'Les deux sprints suivant ont été consacrés à la création de notre front-end et notre back-end et de la communication de ces deux parties. Nous avons donc réussi à parametrer la création d\'un espace utilisateur et la création d\'espace équipe depuis ces espaces utilisateur. Le nombre de fonctionnalités disponibles dans ces espaces a été revu à la baisse vu le manque de temps.',
+        content: 'Les deux sprints suivants ont été consacrés à la création de notre front-end, de notre back-end et de la communication de ces deux parties. Nous avons donc réussi à paramétrer la création d\'un espace utilisateur et la création d\'espace équipe depuis ces espaces utilisateur. Le nombre de fonctionnalités disponibles dans ces espaces a été revu à la baisse vu le manque de temps.',
         stats: {
           like: randomNumber(1400, 1600),
         },
@@ -825,7 +825,7 @@ export default [
         author_job: 'Développeur Web - Front End - React.Js',
         author_company: null,
         publish_date: '06/02/2020',
-        content: 'Le dernier sprint était quant à lui reservé à la correction de bug et implémentation de toute petite fonctionnalité, pas question de révolutionner notre application maintenant. En effet à la fin de ce sprint, nous avons du présenter notre projet en direct sur twitch. Envie d\'en savoir plus, n\'hésitez pas à regarder notre présentation : https://www.youtube.com/watch?v=MHGc9LzlKuY (à partir de 22:50)',
+        content: 'Le dernier sprint était quant à lui reservé à la correction de bug et à l\'implémentation de petites fonctionnalités, pas question de révolutionner notre application maintenant. En effet à la fin de ce sprint, nous avons du présenter notre projet en direct sur Twitch. Envie d\'en savoir plus, n\'hésitez pas à regarder notre présentation : https://www.youtube.com/watch?v=MHGc9LzlKuY (à partir de 22:50)',
         stats: {
           like: randomNumber(1600, 2000),
         },
@@ -842,7 +842,7 @@ export default [
       company: null,
       publish_date: '10/01/2020',
     },
-    content: 'C\'est maintenant l\'heure du projet de fin de formation, connu également sous le nom d\'APOTHÉOSE chez O\'clock! Le travail en équipe ne me stress pas le moins du monde, même si nous sommes dispatchés au quatres coins de la France. Nous serons donc une équipe de cinq développeurs et notre but sera de proposer une application qui permet d’accompagner le staff technique d\'une équipe de football dans la gestion des matchs et de l’effectif.',
+    content: 'C\'est maintenant l\'heure du projet de fin de formation, connu également sous le nom d\'APOTHÉOSE chez O\'clock ! Le travail en équipe ne me stress pas le moins du monde, même si nous sommes dispatchés au quatre coins de la France. Nous serons donc une équipe de cinq développeurs et notre but sera de proposer une application qui permet d’accompagner le staff technique d\'une équipe de football dans la gestion des matchs et de l’effectif.',
     img: null,
     stats: {
       counting_views: randomNumber(3000, 3500),
@@ -1252,7 +1252,7 @@ export default [
             author_job: 'Team Admission',
             author_company: 'Ecole O\'clock',
             publish_date: '30/08/2019',
-            content: 'Et on ne s\'en plaint pas, Quel confort au quotidien !',
+            content: 'Et on ne s\'en plaint pas, quel confort au quotidien !',
             stats: {
               like: 75,
             },
@@ -1376,7 +1376,7 @@ export default [
         author_job: fakeDatas[1].jobTitle,
         author_company: fakeDatas[1].company,
         publish_date: '26/08/2019',
-        content: 'Je te souhaite beaucoup de réussite pour cette formation! Tu verras, elle vaut le coup.',
+        content: 'Je te souhaite beaucoup de réussite pour cette formation ! Tu verras, elle vaut le coup.',
         stats: {
           like: randomNumber(1, 10),
         },
