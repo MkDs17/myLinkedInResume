@@ -2,7 +2,7 @@
 ![alt little gif of using this app](src/public/assets/img/screenshot.png)
 
 ## What's this ?
-This is a CV introducing me to the LinkedIn way
+This is a resume introducing me to the LinkedIn way
 
 ## Content
 * Posts
