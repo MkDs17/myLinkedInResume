@@ -1,6 +1,8 @@
 # My LinkedIn Resume
 ![alt little gif of using this app](src/public/assets/img/screenshot.png)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/70621544-9320-4586-9cb6-c980f7a97129/deploy-status)](https://app.netlify.com/sites/linkedin-resume/deploys)
+
 ## What's this ?
 This is a resume introducing me to the LinkedIn way
 
