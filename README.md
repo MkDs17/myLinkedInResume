@@ -14,9 +14,9 @@ This is a resume introducing me to the LinkedIn way
 * Stats (views, likes, etc ...)
 
 ## Main Stacks
-| Stacks    |            |             |                       |                       | 
-|:---------:|:----------:|:-----------:|:---------------------:|:---------------------:|
-| **Front** | React.js   | Redux       | Webpack               | Tailwindcss               | 
+| Stacks    |            |                       |                       |
+|:---------:|:----------:|:---------------------:|:---------------------:|
+| **Front** | React.js   | Webpack               | Tailwindcss           |
 
 
 
