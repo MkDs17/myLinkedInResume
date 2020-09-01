@@ -5,6 +5,8 @@ import './author.scss';
 
 import { calculateTimeBtwTwoDates } from '../../../../utils/funtions';
 
+const avatarPath = require.context('../../../../public/assets/img/publi/avatar/', true);
+
 const Author = ({ author }) => {
   const [dynamicDate, setDynamicDate] = useState('');
 
@@ -12,12 +14,14 @@ const Author = ({ author }) => {
     setDynamicDate(calculateTimeBtwTwoDates(author.publish_date));
   }, []);
 
+  const avatarImg = avatarPath(`./${author.avatar}`);
+
   return (
     <div className="publication-author px-4 pt-4 mb-3 flex justify-between">
       <div>
         <div className="flex">
           <div className="publication-author-avatar">
-            <img className="h-12 w-12 mr-2 object-cover rounded-full" alt="" src={`/src/public/assets/img/publi/avatar/${author.avatar}`} />
+            <img className="h-12 w-12 mr-2 object-cover rounded-full" alt="author-avatar" src={avatarImg.default} />
           </div>
           <div className="publication-author-infos flex flex-col">
             <div className="flex">
