@@ -5,7 +5,7 @@ import './author.scss';
 
 import { calculateTimeBtwTwoDates } from '../../../../utils/funtions';
 
-const avatarPath = require.context('src/public/assets/img/publi/avatar/', true);
+const avatarPath = require.context('src/public/assets/img/publi/avatar/');
 
 const Author = ({ author }) => {
   const [dynamicDate, setDynamicDate] = useState('');
