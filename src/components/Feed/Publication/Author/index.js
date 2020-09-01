@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
 import './author.scss';
+import test from '../../../../public/assets/img/publi/avatar/MR.png';
 
 import { calculateTimeBtwTwoDates } from '../../../../utils/funtions';
 
@@ -21,7 +22,7 @@ const Author = ({ author }) => {
       <div>
         <div className="flex">
           <div className="publication-author-avatar">
-            <img className="h-12 w-12 mr-2 object-cover rounded-full" alt="author-avatar" src={avatarImg.default} />
+            <img className="h-12 w-12 mr-2 object-cover rounded-full" alt="author-avatar" src={test} />
           </div>
           <div className="publication-author-infos flex flex-col">
             <div className="flex">
