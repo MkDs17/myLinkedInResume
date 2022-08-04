@@ -63,6 +63,7 @@
     "start": "webpack-dev-server",
     "clean": "rm -rf dist",
     "clean:all": "rm -rf dist node_modules",
+    "build": "NODE_ENV=production webpack --mode production",
     "build:dev": "NODE_ENV=development webpack",
     "build:dev:win": "set NODE_ENV=development && webpack",
     "build:prod": "NODE_ENV=production webpack --mode production",
