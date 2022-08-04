@@ -15,7 +15,7 @@ const Stats = ({ stats, viewMoreAction, totalNotification, commentsCounter }) =>
       <div className="publication-stats-icons flex items-center">
         {stats.notifs.like > 0 && (
           <div className="publication-stats-icons-like">
-            <img className="object-cover rounded-full" alt="like" src={IconsLike} />
+            <img className="object-cover rounded-full" alt="likeee" src={IconsLike} />
           </div>
         )}
         {stats.notifs.clap > 0 && (
