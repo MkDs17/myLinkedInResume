@@ -7,7 +7,7 @@ export default [
     id: 15,
     author: {
       name: 'Mickael RASSICOT',
-      avatar: 'MR.png',
+      avatar: '/src/public/assets/img/publi/avatar/MR.png',
       connection_level: '1er',
       job: 'Développeur Web - Front End - React.Js',
       company: null,
@@ -209,7 +209,7 @@ export default [
     id: 14,
     author: {
       name: 'Mickael RASSICOT',
-      avatar: 'MR.png',
+      avatar: '/src/public/assets/img/publi/avatar/MR.png',
       connection_level: '1er',
       job: 'Développeur Web - Front End - React.Js',
       company: null,
@@ -249,7 +249,7 @@ export default [
     id: 13,
     author: {
       name: 'Mickael RASSICOT',
-      avatar: 'MR.png',
+      avatar: '/src/public/assets/img/publi/avatar/MR.png',
       connection_level: '1er',
       job: 'Développeur Web - Front End - React.Js',
       company: null,
@@ -304,7 +304,7 @@ export default [
     id: 12,
     author: {
       name: 'Mickael RASSICOT',
-      avatar: 'MR.png',
+      avatar: '/src/public/assets/img/publi/avatar/MR.png',
       connection_level: '1er',
       job: 'Développeur Web - Front End - React.Js',
       company: null,
@@ -504,7 +504,7 @@ export default [
     id: 11,
     author: {
       name: 'Mickael RASSICOT',
-      avatar: 'MR.png',
+      avatar: '/src/public/assets/img/publi/avatar/MR.png',
       connection_level: '1er',
       job: 'Développeur Web - Front End - React.Js',
       company: null,
@@ -544,7 +544,7 @@ export default [
     id: 10,
     author: {
       name: 'Mickael RASSICOT',
-      avatar: 'MR.png',
+      avatar: '/src/public/assets/img/publi/avatar/MR.png',
       connection_level: '1er',
       job: 'Développeur Web - Front End - React.Js',
       company: null,
@@ -636,7 +636,7 @@ export default [
     id: 9,
     author: {
       name: 'Mickael RASSICOT',
-      avatar: 'MR.png',
+      avatar: '/src/public/assets/img/publi/avatar/MR.png',
       connection_level: '1er',
       job: 'Développeur Web - Front End - React.Js',
       company: null,
@@ -717,7 +717,7 @@ export default [
     id: 8,
     author: {
       name: 'Mickael RASSICOT',
-      avatar: 'MR.png',
+      avatar: '/src/public/assets/img/publi/avatar/MR.png',
       connection_level: '1er',
       job: 'Développeur Web - Front End - React.Js',
       company: null,
@@ -757,7 +757,7 @@ export default [
     id: 7,
     author: {
       name: 'Mickael RASSICOT',
-      avatar: 'MR.png',
+      avatar: '/src/public/assets/img/publi/avatar/MR.png',
       connection_level: '1er',
       job: 'Développeur Web - Front End - React.Js',
       company: null,
@@ -836,7 +836,7 @@ export default [
     id: 6,
     author: {
       name: 'Mickael RASSICOT',
-      avatar: 'MR.png',
+      avatar: '/src/public/assets/img/publi/avatar/MR.png',
       connection_level: '1er',
       job: 'Développeur Web - Front End - React.Js',
       company: null,
@@ -876,7 +876,7 @@ export default [
     id: 5,
     author: {
       name: 'Mickael RASSICOT',
-      avatar: 'MR.png',
+      avatar: '/src/public/assets/img/publi/avatar/MR.png',
       connection_level: '1er',
       job: 'Développeur Web - Front End - React.Js',
       company: null,
@@ -931,7 +931,7 @@ export default [
     id: 4,
     author: {
       name: 'Mickael RASSICOT',
-      avatar: 'MR.png',
+      avatar: '/src/public/assets/img/publi/avatar/MR.png',
       connection_level: '1er',
       job: 'Développeur Web - Front End - React.Js',
       company: null,
@@ -1010,7 +1010,7 @@ export default [
     id: 3,
     author: {
       name: 'Mickael RASSICOT',
-      avatar: 'MR.png',
+      avatar: '/src/public/assets/img/publi/avatar/MR.png',
       connection_level: '1er',
       job: 'Développeur Web - Front End - React.Js',
       company: null,
@@ -1210,7 +1210,7 @@ export default [
     id: 2,
     author: {
       name: 'Mickael RASSICOT',
-      avatar: 'MR.png',
+      avatar: '/src/public/assets/img/publi/avatar/MR.png',
       connection_level: '1er',
       job: 'Développeur Web - Front End - React.Js',
       company: null,
@@ -1347,7 +1347,7 @@ export default [
     id: 1,
     author: {
       name: 'Mickael RASSICOT',
-      avatar: 'MR.png',
+      avatar: '/src/public/assets/img/publi/avatar/MR.png',
       connection_level: '1er',
       job: 'Développeur Web - Front End - React.Js',
       company: null,
