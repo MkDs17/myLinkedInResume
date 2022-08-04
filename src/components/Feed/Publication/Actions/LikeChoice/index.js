@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import './like-choice.scss';
-import ActionLike from '/src/public/assets/img/buttons/action-like.svg'
+import ActionLike from '../../../../../../src/public/assets/img/buttons/action-like.svg'
 
 const LikeChoice = ({ className, setClicked, setLikedButtonHover, setlikedButtonClass, addLikeFromChild }) => {
 // Permet de gérer l'affichage de la pop-up nous permettant de choisir l'action du like (like, love, interesst, etc...)

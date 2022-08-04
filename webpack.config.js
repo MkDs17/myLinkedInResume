@@ -108,10 +108,6 @@ module.exports = {
           },
         ],
       },
-      {
-        test: /\.svg$/,
-        loader: 'svg-inline-loader'
-      },
       // fonts
       {
         test: /\.(ttf|otf|eot|woff2?)(\?[a-z0-9]+)?$/,
