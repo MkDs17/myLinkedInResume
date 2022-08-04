@@ -15,13 +15,14 @@ const Author = ({ author }) => {
   }, []);
 
   const avatarImg = avatarPath(`./${author.avatar}`);
+  console.log(avatarImg)
 
   return (
     <div className="publication-author px-4 pt-4 mb-3 flex justify-between">
       <div>
         <div className="flex">
           <div className="publication-author-avatar">
-            <img className="h-12 w-12 mr-2 object-cover rounded-full" alt="author-avatar" src={avatarImg.default} />
+            <img className="h-12 w-12 mr-2 object-cover rounded-full" alt="author-avatar" src={avatarImg} />
           </div>
           <div className="publication-author-infos flex flex-col">
             <div className="flex">
