@@ -98,7 +98,7 @@ module.exports = {
       },
       // Images
       {
-        test: /\.(png|svg|jpg|gif|ico)$/,
+        test: /\.(png|jpg|gif|ico)$/,
         use: [
           {
             options: {
@@ -107,6 +107,10 @@ module.exports = {
             loader: 'file-loader',
           },
         ],
+      },
+      {
+        test: /\.svg$/,
+        loader: 'svg-inline-loader'
       },
       // fonts
       {

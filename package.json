@@ -54,6 +54,7 @@
     "style-loader": "*",
     "stylelint": "*",
     "stylelint-config-recommended": "*",
+    "svg-inline-loader": "^0.8.2",
     "uglifyjs-webpack-plugin": "*",
     "webpack": "*",
     "webpack-cli": "*",
