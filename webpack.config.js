@@ -98,7 +98,7 @@ module.exports = {
       },
       // Images
       {
-        test: /\.(png|jpg|gif|ico)$/,
+        test: /\.(png|jp(e*)g|svg|gif|ico)$/,
         use: [
           {
             options: {

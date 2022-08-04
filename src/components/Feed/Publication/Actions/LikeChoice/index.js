@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import './like-choice.scss';
-import actionLike from '../../../../../../src/public/assets/img/buttons/action-like.svg'
+import ActionLike from '/src/public/assets/img/buttons/action-like.svg'
 
 const LikeChoice = ({ className, setClicked, setLikedButtonHover, setlikedButtonClass, addLikeFromChild }) => {
 // Permet de gérer l'affichage de la pop-up nous permettant de choisir l'action du like (like, love, interesst, etc...)
@@ -24,8 +24,7 @@ const LikeChoice = ({ className, setClicked, setLikedButtonHover, setlikedButton
 
       <div className="publication-action-like-choice--like" onClick={() => onActionLikeChoice('blue')}>
         <span className="publication-action-like-choice-img-popup popup rounded-full">J'aime</span>
-        <img className="publication-action-like-choice-img" alt="like" src="/src/public/assets/img/buttons/action-like.svg" />
-        <actionLike width="1rem" />
+        <img className="publication-action-like-choice-img" alt="like" src="{ActionLike}" />
       </div>
 
       <div className="publication-action-like-choice--clap" onClick={() => onActionLikeChoice('green')}>
