@@ -15,7 +15,6 @@ const Author = ({ author }) => {
   }, []);
 
   const avatarImg = avatarPath(`./${author.avatar}`);
-  console.log(avatarImg)
 
   return (
     <div className="publication-author px-4 pt-4 mb-3 flex justify-between">
