@@ -6,6 +6,8 @@ import './actions.scss';
 
 import {dynamicContentButton} from '../../../../utils/funtions';
 
+import { ReactComponent as ActionLike24 } from 'src/public/assets/img/buttons/action-clap-24.svg'
+
 import LikeChoice from './LikeChoice';
 
 // eslint-disable-next-line padded-blocks
