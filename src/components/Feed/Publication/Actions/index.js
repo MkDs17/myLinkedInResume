@@ -6,12 +6,12 @@ import './actions.scss';
 
 import {dynamicContentButton} from '../../../../utils/funtions';
 
-import { ActionLike24 } from 'src/public/assets/img/buttons/action-like-24.svg'
-import { ActionClap24 } from 'src/public/assets/img/buttons/action-clap-24.svg'
-import { ActionIdea24 } from 'src/public/assets/img/buttons/action-idea-24.svg'
-import { ActionInterest24 } from 'src/public/assets/img/buttons/action-interest-24.svg'
-import { ActionLove24 } from 'src/public/assets/img/buttons/action-love-24.svg'
-import { ActionLike } from 'src/public/assets/img/buttons/like.svg'
+import ActionLike24 from 'src/public/assets/img/buttons/action-like-24.svg'
+import ActionClap24 from 'src/public/assets/img/buttons/action-clap-24.svg'
+import ActionIdea24 from 'src/public/assets/img/buttons/action-idea-24.svg'
+import ActionInterest24 from 'src/public/assets/img/buttons/action-interest-24.svg'
+import ActionLove24 from 'src/public/assets/img/buttons/action-love-24.svg'
+import ActionLike from 'src/public/assets/img/buttons/like.svg'
 
 import LikeChoice from './LikeChoice';
 
