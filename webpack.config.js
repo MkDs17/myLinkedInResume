@@ -104,7 +104,6 @@ module.exports = {
           {
             options: {
               name: '[path][name].[ext]',
-              outputPath: 'assets/',
             },
             loader: 'file-loader',
           },
