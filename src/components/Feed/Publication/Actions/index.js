@@ -6,7 +6,13 @@ import './actions.scss';
 
 import {dynamicContentButton} from '../../../../utils/funtions';
 
-import { ReactComponent as ActionLike24 } from 'src/public/assets/img/buttons/action-clap-24.svg'
+import { ReactComponent as ActionLike24 } from 'src/public/assets/img/buttons/action-like-24.svg'
+import { ReactComponent as ActionClap24 } from 'src/public/assets/img/buttons/action-clap-24.svg'
+import { ReactComponent as ActionIdea24 } from 'src/public/assets/img/buttons/action-idea-24.svg'
+import { ReactComponent as ActionInterest24 } from 'src/public/assets/img/buttons/action-interest-24.svg'
+import { ReactComponent as ActionLove24 } from 'src/public/assets/img/buttons/action-love-24.svg'
+import { ReactComponent as ActionLike } from 'src/public/assets/img/buttons/like.svg'
+import { ReactComponent as ActionLike } from 'src/public/assets/img/buttons/like.svg'
 
 import LikeChoice from './LikeChoice';
 
