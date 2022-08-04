@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 
 import './stats.scss';
 
-import { ReactComponent as IconsLike } from '/src/public/assets/img/icons/like.svg'
-import { ReactComponent as IconsLove } from '/src/public/assets/img/icons/love.svg'
-import { ReactComponent as IconsClap } from '/src/public/assets/img/icons/clap.svg'
-import { ReactComponent as IconsIdea } from '/src/public/assets/img/icons/idea.svg'
-import { ReactComponent as IconsThinking } from '/src/public/assets/img/icons/thinking.svg'
+import { ReactComponent as IconsLike } from 'src/public/assets/img/icons/like.svg'
+import { ReactComponent as IconsLove } from 'src/public/assets/img/icons/love.svg'
+import { ReactComponent as IconsClap } from 'src/public/assets/img/icons/clap.svg'
+import { ReactComponent as IconsIdea } from 'src/public/assets/img/icons/idea.svg'
+import { ReactComponent as IconsThinking } from 'src/public/assets/img/icons/thinking.svg'
 
 const Stats = ({ stats, viewMoreAction, totalNotification, commentsCounter }) => {
   return (
