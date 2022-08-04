@@ -20,13 +20,15 @@ export const fakerGeneralsDatas = () => {
       id: i,
       firstname: faker.fake('{{name.firstName}}'),
       lastname: faker.fake('{{name.lastName}}'),
-      pic: faker.fake('{{image.avatar}}'),
+      pic: faker.fake('{{internet.avatar}}'),
       jobTitle: faker.fake('{{name.jobType}}'),
       company: faker.fake('{{company.companyName}}'),
       phone: formatNumber(faker.fake('{{phone.phoneNumberFormat}}')),
     };
     datasArray.push(dataObject);
   }
+
+  console.log(datasArray)
 
   return datasArray;
 };
