@@ -20,7 +20,7 @@ export const fakerGeneralsDatas = () => {
       id: i,
       firstname: faker.fake('{{name.firstName}}'),
       lastname: faker.fake('{{name.lastName}}'),
-      pic: 'https://100k-faces.glitch.me/',
+      pic: 'https://100k-faces.glitch.me/random-image',
       jobTitle: faker.fake('{{name.jobType}}'),
       company: faker.fake('{{company.companyName}}'),
       phone: formatNumber(faker.fake('{{phone.phoneNumberFormat}}')),
