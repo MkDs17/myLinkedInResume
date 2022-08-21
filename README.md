@@ -26,7 +26,7 @@ This is a resume introducing me to the LinkedIn way
 3. Then execute `npm start` or `yarn start`
 
 
-> #### Data is provided via the file feddData.js with the help of Faker for the creation of false profiles and false statistics
+> #### Data is provided via the file feedData.js with the help of Faker for the creation of false profiles and false statistics
 
 You can reach me on GitHub or on [StackOverflow](https://stackoverflow.com/users/13077371/mkds17)
 
